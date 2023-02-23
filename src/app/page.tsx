@@ -1,13 +1,32 @@
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
+
+import InputForm from "../components/forms/InputForm.client"
+// import Button from "./components/UI/Button/Button"
+
+// import  Header from "./components/Header/header"
 
 
-const inter = Inter({ subsets: ['latin'] })
+
+export interface AppState {
+  items: number[],
+  inputValue: string
+}
+
 
 export default function Home() {
+
+
+
+
+
   return (
-    <main className="bg-red-500">
-      trest
-    </main>
+    <div className="pl-12 ">
+    {/* <Header/> */}
+    <h1
+    className="text-4xl font-bold text-center"
+    >Starting Application</h1>
+
+    <InputForm  />
+
+  </div>
   )
 }
