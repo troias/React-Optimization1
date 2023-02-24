@@ -1,14 +1,13 @@
-import React from "react"
-import { useState, useCallback } from "react"
-
+import React from "react";
+import { useState, useCallback } from "react";
 
 type ButtonProps = {
-  onClick: () => void,
-  type?: "button" | "submit" | "reset",
-  className?: string,
-  disabled?: boolean,
-  children: React.ReactNode,
-}
+  onClick: () => void;
+  type?: "button" | "submit" | "reset";
+  className?: string;
+  disabled?: boolean;
+  children: React.ReactNode;
+};
 
 const Button = ({
   onClick,
@@ -17,26 +16,26 @@ const Button = ({
   disabled,
   children,
 }: ButtonProps) => {
-  const [allowToggle, setAllowToggle] = useState(false)
-  const [show, setShow] = useState(false)
+  const [allowToggle, setAllowToggle] = useState(false);
+  const [show, setShow] = useState(false);
 
   const buttonHandler = useCallback(() => {
     if (allowToggle) {
-      setShow((prevState) => !prevState)
+      setShow((prevState) => !prevState);
     }
-    onClick()
-  }, [allowToggle, onClick])
+    onClick();
+  }, [allowToggle, onClick]);
 
   return (
     <button
       type={type}
-      className={``}
+      className={className}
       onClick={buttonHandler}
       disabled={disabled}
     >
       {children}
     </button>
-  )
-}
+  );
+};
 
-export default React.memo(Button)
+export default React.memo(Button);
