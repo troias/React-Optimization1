@@ -1,12 +1,7 @@
-<<<<<<< HEAD
-"use client"
-import React, { Fragment, useState } from 'react'
-import { Dialog, Popover, Transition } from '@headlessui/react'
-=======
 "use client";
 import React, { Fragment, useState } from "react";
 import { Dialog, Popover, Transition } from "@headlessui/react";
->>>>>>> split
+
 import {
   ArrowPathIcon,
   Bars3Icon,
@@ -15,43 +10,6 @@ import {
   FingerPrintIcon,
   SquaresPlusIcon,
   XMarkIcon,
-<<<<<<< HEAD
-} from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
-
-const products = [
-  { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-  { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-  { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
-]
-const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
-]
-const company = [
-  { name: 'About us', href: '#', description: 'Learn more about our company values and mission to empower others' },
-  { name: 'Careers', href: '#', description: 'Looking for you next career opportunity? See all of our open positions' },
-  {
-    name: 'Support',
-    href: '#',
-    description: 'Get in touch with our dedicated support team or reach out on our community forums',
-  },
-  { name: 'Blog', href: '#', description: 'Read our latest announcements and get perspectives from our team' },
-]
-
-export default function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
-  return (
-    <header className="bg-white">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-        <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
-            <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
-=======
 } from "@heroicons/react/24/outline";
 import {
   ChevronDownIcon,
@@ -139,7 +97,6 @@ export default function Header() {
               src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
               alt=""
             />
->>>>>>> split
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -156,14 +113,10 @@ export default function Header() {
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
               Product
-<<<<<<< HEAD
-              <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
-=======
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
                 aria-hidden="true"
               />
->>>>>>> split
             </Popover.Button>
 
             <Transition
@@ -183,12 +136,6 @@ export default function Header() {
                       className="group relative flex gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                     >
                       <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-<<<<<<< HEAD
-                        <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
-                      </div>
-                      <div className="flex-auto">
-                        <a href={item.href} className="block font-semibold text-gray-900">
-=======
                         <item.icon
                           className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
                           aria-hidden="true"
@@ -199,7 +146,6 @@ export default function Header() {
                           href={item.href}
                           className="block font-semibold text-gray-900"
                         >
->>>>>>> split
                           {item.name}
                           <span className="absolute inset-0" />
                         </a>
@@ -215,14 +161,10 @@ export default function Header() {
                       href={item.href}
                       className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
                     >
-<<<<<<< HEAD
-                      <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
-=======
                       <item.icon
                         className="h-5 w-5 flex-none text-gray-400"
                         aria-hidden="true"
                       />
->>>>>>> split
                       {item.name}
                     </a>
                   ))}
@@ -241,14 +183,10 @@ export default function Header() {
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
               Company
-<<<<<<< HEAD
-              <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
-=======
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
                 aria-hidden="true"
               />
->>>>>>> split
             </Popover.Button>
 
             <Transition
@@ -262,14 +200,6 @@ export default function Header() {
             >
               <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-96 rounded-3xl bg-white p-4 shadow-lg ring-1 ring-gray-900/5">
                 {company.map((item) => (
-<<<<<<< HEAD
-                  <div key={item.name} className="relative rounded-lg p-4 hover:bg-gray-50">
-                    <a href={item.href} className="block text-sm font-semibold leading-6 text-gray-900">
-                      {item.name}
-                      <span className="absolute inset-0" />
-                    </a>
-                    <p className="mt-1 text-sm leading-6 text-gray-600">{item.description}</p>
-=======
                   <div
                     key={item.name}
                     className="relative rounded-lg p-4 hover:bg-gray-50"
@@ -284,7 +214,6 @@ export default function Header() {
                     <p className="mt-1 text-sm leading-6 text-gray-600">
                       {item.description}
                     </p>
->>>>>>> split
                   </div>
                 ))}
               </Popover.Panel>
@@ -297,14 +226,6 @@ export default function Header() {
           </a>
         </div>
       </nav>
-<<<<<<< HEAD
-      <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-        <div className="fixed inset-0 z-10" />
-        <Dialog.Panel
-     
-          className="fixed inset-y-0 right-0 z-10 flex w-full flex-col justify-between overflow-y-auto bg-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
-        >
-=======
       <Dialog
         as="div"
         className="lg:hidden"
@@ -313,7 +234,6 @@ export default function Header() {
       >
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 flex w-full flex-col justify-between overflow-y-auto bg-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
->>>>>>> split
           <div className="p-6">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
@@ -343,14 +263,10 @@ export default function Header() {
                       className="group -mx-3 flex items-center gap-x-6 rounded-lg p-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-<<<<<<< HEAD
-                        <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
-=======
                         <item.icon
                           className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
                           aria-hidden="true"
                         />
->>>>>>> split
                       </div>
                       {item.name}
                     </a>
@@ -405,10 +321,5 @@ export default function Header() {
         </Dialog.Panel>
       </Dialog>
     </header>
-<<<<<<< HEAD
-  )
-}
-=======
   );
 }
->>>>>>> split

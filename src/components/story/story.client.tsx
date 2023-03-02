@@ -1,11 +1,7 @@
 "use client";
 
 import { useState } from "react";
-<<<<<<< HEAD
-import { development_story } from "../../../src/lib/info";
-=======
 import { development_story } from "../.././lib/info";
->>>>>>> split
 
 export default function Story() {
   return (
