@@ -8,8 +8,6 @@ export default function Home() {
     <div className=" ">
       <Header />
       <div className="min-h-screen bg-white p-">
-        {/* <Story /> */}
-        {/* <InputForm />  */}
         <Hero />
       </div>
     </div>
