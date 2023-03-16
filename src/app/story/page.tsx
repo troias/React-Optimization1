@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { steps } from "@/lib/info";
+import { steps } from "../../lib/info";
 
 const pageInfo = [
   {
@@ -17,10 +17,15 @@ export default function Example() {
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             {pageInfo.map((info) => (
-              <span key={info.title}>{info.title}</span>
+              <span key={info.title} data-testid="title">
+                {info.title}
+              </span>
             ))}
           </h2>
-          <p className="mt-2 text-lg leading-8 text-gray-600">
+          <p
+            className="mt-2 text-lg leading-8 text-gray-600"
+            data-testid="description"
+          >
             {pageInfo.map((info) => (
               <span key={info.description}>{info.description}</span>
             ))}

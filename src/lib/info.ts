@@ -64,8 +64,8 @@ export const steps = [
     },
     {
       id: 3,
-      title: "Build",
-      href: "/build",
+      title: "Development",
+      href: "/development",
       description:
         "The third step is all about bringing your project to life. I use NextJS to ensure a top-quality end result, TailwindCSS for speedy prototype building, Jest for seamless testing, and TypeScript for added safety.",
     

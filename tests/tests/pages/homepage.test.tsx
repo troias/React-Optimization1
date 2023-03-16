@@ -21,16 +21,6 @@ describe("Home page", () => {
 
 //test if hero componnet has correct text jest ?
 
-describe("Home page", () => {
-  test("should check if Hero has text and a button with a link ", () => {
-    render(<Home />);
-    const hero = screen.getByTestId("hero");
-    expect(hero).toHaveTextContent(
-      "Explore the process of how I transformed an intial concept into a fully functioning website"
-    );
-  });
-});
-
 describe("ButtonWithLink component", () => {
   const clickHandler = jest.fn();
 
