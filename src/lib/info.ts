@@ -35,7 +35,7 @@ export const steps = [
       imageUrl: "https://source.unsplash.com/vgQylw5-0v0/800x600/",
       date: "Mar 16, 2020",
       datetime: "2023-03-16",
-      category: { title: "Design", href: "#" },
+      category: { title: "Ideation", href: "#" },
       author: {
         name: "Troy Flavell",
         role: "Co-Founder / CTO",
@@ -72,7 +72,7 @@ export const steps = [
       imageUrl: "https://source.unsplash.com//QUHuwyNgSA0/800x600/",
       date: "Mar 16, 2020",
       datetime: "2023-03-16",
-      category: { title: "Design", href: "#" },
+      category: { title: "Development", href: "#" },
       author: {
         name: "Troy Flavell",
         role: "Co-Founder / CTO",

@@ -1,58 +1,40 @@
 "use client";
 import React, { Fragment, useState } from "react";
 import { Dialog, Popover, Transition } from "@headlessui/react";
+import Logo from "../ui/logo/logo";
 
 import {
-  ArrowPathIcon,
-  Bars3Icon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
-  XMarkIcon,
-} from "@heroicons/react/24/outline";
-import {
   ChevronDownIcon,
-  PhoneIcon,
-  PlayCircleIcon,
-} from "@heroicons/react/20/solid";
+  BookOpenIcon,
+  LightBulbIcon,
+  RocketLaunchIcon,
+} from "@heroicons/react/24/solid";
+
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/20/solid";
 
 const products = [
   {
-    name: "Analytics",
+    name: "Story",
     description: "Get a better understanding of your traffic",
-    href: "#",
-    icon: ChartPieIcon,
+    href: "/story",
+    icon: BookOpenIcon,
   },
   {
-    name: "Engagement",
+    name: "Ideation",
     description: "Speak directly to your customers",
-    href: "#",
-    icon: CursorArrowRaysIcon,
+    href: "/ideation",
+    icon: LightBulbIcon,
   },
   {
-    name: "Security",
+    name: "Development",
     description: "Your customers’ data will be safe and secure",
-    href: "#",
-    icon: FingerPrintIcon,
+    href: "/development",
+    icon: RocketLaunchIcon,
   },
-  {
-    name: "Integrations",
-    description: "Connect with third-party tools",
-    href: "#",
-    icon: SquaresPlusIcon,
-  },
-  {
-    name: "Automations",
-    description: "Build strategic funnels that will convert",
-    href: "#",
-    icon: ArrowPathIcon,
-  },
+
+  ,
 ];
-const callsToAction = [
-  { name: "Watch demo", href: "#", icon: PlayCircleIcon },
-  { name: "Contact sales", href: "#", icon: PhoneIcon },
-];
+
 const company = [
   {
     name: "About us",
@@ -90,15 +72,9 @@ export default function Header() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
-            <img
-              className="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-              alt=""
-            />
-          </a>
+          <Logo />
         </div>
+
         <div className="flex lg:hidden">
           <button
             type="button"
@@ -154,31 +130,9 @@ export default function Header() {
                     </div>
                   ))}
                 </div>
-                <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
-                  {callsToAction.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
-                    >
-                      <item.icon
-                        className="h-5 w-5 flex-none text-gray-400"
-                        aria-hidden="true"
-                      />
-                      {item.name}
-                    </a>
-                  ))}
-                </div>
               </Popover.Panel>
             </Transition>
           </Popover>
-
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Features
-          </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Marketplace
-          </a>
 
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
@@ -272,51 +226,8 @@ export default function Header() {
                     </a>
                   ))}
                 </div>
-                <div className="space-y-2 py-6">
-                  <a
-                    href="#"
-                    className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    Features
-                  </a>
-                  <a
-                    href="#"
-                    className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    Marketplace
-                  </a>
-
-                  {company.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                    >
-                      {item.name}
-                    </a>
-                  ))}
-                </div>
-                <div className="py-6">
-                  <a
-                    href="#"
-                    className="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    Log in
-                  </a>
-                </div>
               </div>
             </div>
-          </div>
-          <div className="sticky bottom-0 grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50 text-center">
-            {callsToAction.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="p-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-100"
-              >
-                {item.name}
-              </a>
-            ))}
           </div>
         </Dialog.Panel>
       </Dialog>
