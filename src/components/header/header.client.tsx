@@ -8,6 +8,7 @@ import {
   BookOpenIcon,
   LightBulbIcon,
   RocketLaunchIcon,
+  DevicePhoneMobileIcon,
 } from "@heroicons/react/24/solid";
 
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/20/solid";
@@ -25,6 +26,13 @@ const products = [
     href: "/ideation",
     icon: LightBulbIcon,
   },
+  {
+    name: "Design",
+    description: "Speak directly to your customers",
+    href: "/ideation",
+    icon: DevicePhoneMobileIcon,
+  },
+
   {
     name: "Development",
     description: "Your customers’ data will be safe and secure",
@@ -108,7 +116,7 @@ export default function Header() {
                 <div className="p-4">
                   {products.map((item) => (
                     <div
-                      key={item.name}
+                      key={item?.name}
                       className="group relative flex gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                     >
                       <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
@@ -119,13 +127,15 @@ export default function Header() {
                       </div>
                       <div className="flex-auto">
                         <a
-                          href={item.href}
+                          href={item?.href}
                           className="block font-semibold text-gray-900"
                         >
-                          {item.name}
+                          {item?.name}
                           <span className="absolute inset-0" />
                         </a>
-                        <p className="mt-1 text-gray-600">{item.description}</p>
+                        <p className="mt-1 text-gray-600">
+                          {item?.description}
+                        </p>
                       </div>
                     </div>
                   ))}
@@ -212,8 +222,8 @@ export default function Header() {
                 <div className="space-y-2 py-6">
                   {products.map((item) => (
                     <a
-                      key={item.name}
-                      href={item.href}
+                      key={item?.name}
+                      href={item?.href}
                       className="group -mx-3 flex items-center gap-x-6 rounded-lg p-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
@@ -222,7 +232,7 @@ export default function Header() {
                           aria-hidden="true"
                         />
                       </div>
-                      {item.name}
+                      {item?.name}
                     </a>
                   ))}
                 </div>
