@@ -2,7 +2,7 @@ import React from "react";
 import { MobileDropDown } from "@/components/ui/buttons/MobileDropDown";
 import Image from "next/image";
 import { development_story } from "@/lib/info";
-import { NextButton } from "@/components/ui/buttons/NextButton.client";
+import NextButton from "@/components/ui/buttons/NextButton.client";
 
 type Props = {};
 
@@ -58,7 +58,7 @@ export default function page({}: Props) {
         description={development_story[1].buildingPages.description}
       />
 
-      <div className="py-8">{/* <NextButton /> */}</div>
+      <NextButton text="Next" link="/design" />
     </div>
   );
 }

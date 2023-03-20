@@ -22,7 +22,7 @@ export const MobileDropDown = (props: Props) => {
   return (
     <>
       <div
-        className="flex justify-between items-center w-full px-4 py-6 border-b border-gray-300/40 bg-gray-300/70"
+        className="flex justify-between items-center w-full px-4 py-6 border-b border-gray-300/40 bg-gray-300/10"
         onClick={clickHandler}
       >
         <h3 className="text-lg font-medium text-gray-900">{props.name}</h3>

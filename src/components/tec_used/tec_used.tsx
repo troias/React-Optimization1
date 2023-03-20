@@ -10,7 +10,7 @@ export default function TecUsed({}: Props) {
       <h2 className="text-2xl font-bold text-gray-900 flex justify-center py-10">
         Technologies Used
       </h2>
-      <div className="grid grid-cols-3 gap-4 justify-items-center">
+      <div className="grid grid-cols-3 gap-4 justify-items-center py-2">
         <div className="flex flex-col items-center gap-2 cursor-pointer justify-end">
           <div className="hover:text-purple-700 transition-colors duration-300">
             <a

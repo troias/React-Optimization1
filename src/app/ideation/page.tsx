@@ -4,7 +4,7 @@ import { development_story } from "@/lib/info";
 import TecUsed from "@/components/tec_used/tec_used";
 import Image from "next/image";
 import Link from "next/link";
-import { NextButton } from "@/components/ui/buttons/NextButton.client";
+import NextButton from "@/components/ui/buttons/NextButton.client";
 
 type Props = {};
 
@@ -16,7 +16,7 @@ export default function page({}: Props) {
       </h1>
       <div className="py-8">
         <MobileDropDown
-          name={development_story[0].title}
+          name={development_story[0].name}
           description={development_story[0].description}
         />
       </div>
@@ -32,9 +32,8 @@ export default function page({}: Props) {
       </div>
 
       <TecUsed />
-      <div className="py-8">
-        <NextButton text="Next" href="/design" />
-      </div>
+
+      <NextButton text="Next" link="/design" />
     </div>
   );
 }
