@@ -164,10 +164,7 @@ export default function Header() {
             >
               <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-96 rounded-3xl bg-white p-4 shadow-lg ring-1 ring-gray-900/5">
                 {company.map((item) => (
-                  <div
-                    key={item.name}
-                    className="relative rounded-lg p-4 hover:bg-gray-50"
-                  >
+                  <div key={item.name} className="relative rounded-lg p-4 ">
                     <a
                       href={item.href}
                       className="block text-sm font-semibold leading-6 text-gray-900"

@@ -37,14 +37,16 @@ export default function Example() {
               key={post.id}
               className="flex flex-col items-start justify-between"
             >
-              <div className="relative w-full filter grayscale">
-                <img
-                  src={post.imageUrl}
-                  alt=""
-                  className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
-                />
-                <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
-              </div>
+              <Link href={post.href}>
+                <div className="relative w-full filter grayscale">
+                  <img
+                    src={post.imageUrl}
+                    alt=""
+                    className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
+                  />
+                  <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
+                </div>
+              </Link>
               <div className="max-w-xl">
                 <div className="mt-8 flex items-center gap-x-4 text-xs">
                   <a
@@ -54,18 +56,18 @@ export default function Example() {
                     {post.category.title}
                   </a>
                 </div>
-                <div className="group relative">
-                  <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                    <Link href={post.href}>
+                <Link href={post.href}>
+                  <div className="group relative">
+                    <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
                       <span className="absolute inset-0" />
                       {post.title}
-                    </Link>
-                  </h3>
-                  <p className="mt-5 text-sm leading-6 text-gray-600 line-clamp-3">
-                    {post.description}
-                  </p>
-                </div>
-                <div className="relative mt-8 flex items-center gap-x-4">
+                    </h3>
+                    <p className="mt-5 text-sm leading-6 text-gray-600 line-clamp-3">
+                      {post.description}
+                    </p>
+                  </div>
+                </Link>
+                {/* <div className="relative mt-8 flex items-center gap-x-4">
                   <img
                     src={post.author.imageUrl}
                     alt=""
@@ -80,7 +82,7 @@ export default function Example() {
                     </p>
                     <p className="text-gray-600">{post.author.role}</p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </article>
           ))}

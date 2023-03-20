@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
+import { descriptionFormatter } from "@/lib/utility";
 
 type Props = {
   name: string;
@@ -8,6 +9,9 @@ type Props = {
 };
 
 export const MobileDropDown = (props: Props) => {
+  //get description and add 2 lines after fullstop
+  const descriptionArray = descriptionFormatter(props.description);
+
   const [isOpen, setIsOpen] = useState(false);
 
   const clickHandler = () => {
@@ -17,22 +21,17 @@ export const MobileDropDown = (props: Props) => {
 
   return (
     <>
-      <div className="flex justify-between w-full px-2 py-4">
-        <div>
-          <h3 className="text-lg font-medium text-gray-900">{props.name}</h3>
-        </div>
-
-        <div>
-          <ChevronDownIcon
-            className="h-5 w-5 flex-none text-gray-400"
-            aria-hidden="true"
-            onClick={clickHandler}
-          />
-        </div>
+      <div className="flex justify-between items-center w-full px-4 py-6 border-b border-gray-300/40 bg-gray-300/70">
+        <h3 className="text-lg font-medium text-gray-900">{props.name}</h3>
+        <ChevronDownIcon
+          className="h-5 w-5 flex-none text-gray-400 cursor-pointer"
+          aria-hidden="true"
+          onClick={clickHandler}
+        />
       </div>
       {isOpen && (
-        <div className="mt-2">
-          <p className="text-sm text-gray-500">{props.description}</p>
+        <div className="p-4">
+          <p className="text-sm text-gray-500">{descriptionArray}</p>
         </div>
       )}
     </>
