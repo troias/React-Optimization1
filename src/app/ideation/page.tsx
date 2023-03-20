@@ -4,6 +4,7 @@ import { development_story } from "@/lib/info";
 import TecUsed from "@/components/tec_used/tec_used";
 import Image from "next/image";
 import Link from "next/link";
+import { NextButton } from "@/components/ui/buttons/NextButton.client";
 
 type Props = {};
 
@@ -11,7 +12,7 @@ export default function page({}: Props) {
   return (
     <div>
       <h1 className="text-3xl font-bold text-gray-900 text-center py-8">
-        Step One Ideation
+        {development_story[0].title}
       </h1>
       <div className="py-8">
         <MobileDropDown
@@ -32,12 +33,7 @@ export default function page({}: Props) {
 
       <TecUsed />
       <div className="py-8">
-        <Link
-          href="/design"
-          className="inline-block bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600 transition-colors duration-300 justify-center flex"
-        >
-          Next Step
-        </Link>
+        <NextButton text="Next" href="/design" />
       </div>
     </div>
   );
