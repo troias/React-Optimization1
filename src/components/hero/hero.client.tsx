@@ -13,10 +13,10 @@ export default function Hero({}: Props) {
   };
 
   return (
-    <div data-testid="hero">
+    <div data-testid="hero" className="sm:py-12">
       <div className="grid grid-cols-2 ">
         <div>
-          <p className="text-lg md:text-xl lg:text-2xl leading-tight p-6 font-bold text-center hover:text-blue-500 transition-colors duration-300">
+          <p className="text-lg md:text-xl lg:text-2xl leading-tight p-6 font-bold text-center hover:text-blue-500 transition-colors duration-300 sm:text-xl">
             Explore the process of how I transformed an initial concept into a
             fully functioning website
           </p>

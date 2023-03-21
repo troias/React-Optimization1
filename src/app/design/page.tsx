@@ -3,6 +3,7 @@ import { MobileDropDown } from "@/components/ui/buttons/MobileDropDown";
 import Image from "next/image";
 import { development_story } from "@/lib/info";
 import NextButton from "@/components/ui/buttons/NextButton.client";
+import DualImageDisplay from "@/components/ui/image/DualImageDisplay.client";
 
 type Props = {};
 
@@ -13,52 +14,40 @@ export default function page({}: Props) {
         {development_story[1].title}
       </h1>
 
-      <div className="flex justify-center items-center">
-        <Image
-          src={development_story[1].wireframe.imageUrl}
-          width={500}
-          height={500}
-          className="filter grayscale"
-          alt="Image of my idea"
-        />
-      </div>
+      <DualImageDisplay
+        img={development_story[1].wireframe.imageUrl}
+        orientation="left"
+        text={development_story[1].wireframe.text}
+      />
 
       <MobileDropDown
         name="Wireframing stage"
         description={development_story[1].wireframe.description}
       />
 
-      <div className="flex justify-center items-center">
-        <Image
-          src={development_story[1].designSystem.imageUrl}
-          width={500}
-          height={500}
-          className="filter grayscale"
-          alt="Image of my idea"
-        />
-      </div>
+      <DualImageDisplay
+        img={development_story[1].designSystem.imageUrl}
+        orientation="right"
+        text={development_story[1].designSystem.text}
+      />
 
       <MobileDropDown
         name="Building Design System"
         description={development_story[1].designSystem.description}
       />
 
-      <div className="flex justify-center items-center">
-        <Image
-          src={development_story[1].buildingPages.imageUrl}
-          width={500}
-          height={500}
-          className="filter grayscale"
-          alt="Image of my idea"
-        />
-      </div>
+      <DualImageDisplay
+        img={development_story[1].buildingPages.imageUrl}
+        orientation="left"
+        text={development_story[1].buildingPages.text}
+      />
 
       <MobileDropDown
         name="Building Design System"
         description={development_story[1].buildingPages.description}
       />
 
-      <NextButton text="Next" link="/design" />
+      <NextButton text="Next" link="/development" />
     </div>
   );
 }

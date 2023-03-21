@@ -15,26 +15,42 @@ export const development_story = [
       description:
         "The next step is to start designing the app. Wireframing is quicky done to get a feel for what components I think are needed.",
       imageUrl: "https://source.unsplash.com/4UGmm3WRUoQ/800x600/",
+      text: " wireframe ",
     },
     designSystem: {
       description:
         "The purpose of building a design system in Figma for a web app is to establish a consistent and cohesive visual language for the app's interface. A design system is a collection of reusable design elements, such as components, styles, and guidelines, that can be easily accessed and used across the app's interface. By creating and maintaining a design system in Figma, teams can work more efficiently, reduce design inconsistencies, and improve the overall user experience. Some benefits of building a design system in Figma for a web app include: Consistency: A design system ensures that all elements of the app's interface are visually consistent and aligned with the brand's guidelines. Efficiency: A design system enables designers and developers to work more efficiently by providing a centralized resource for all design assets and guidelines.Scalability: A design system can be easily scaled as the app evolves and new features are added. Collaboration: A design system promotes collaboration between designers, developers, and stakeholders by providing a shared understanding of the app's visual language. Accessibility: A design system can incorporate accessibility guidelines to ensure that the app is usable by everyone, including people with disabilities. Overall, building a design system in Figma is a valuable investment in the development of a web app, as it enables teams to create a more consistent, efficient, and user-friendly product.",
       name: "Design System",
       imageUrl: "https://source.unsplash.com/9VzoRKfBsMM/800x600/",
+      text: " Design System ",
     },
     buildingPages: {
       description:
         "After building wireframes, design systems, and components, it's important to move on to designing pages on Figma. This step allows you to bring all of your previous work together into a cohesive visual representation of your digital product. Designing pages on Figma allows you to see how your components and design system work together in the context of a real page. This can help you identify any inconsistencies or issues with your design system, and make any necessary adjustments before you start coding. Additionally, designing pages on Figma allows you to create responsive designs that work well on a variety of screen sizes and devices. This is increasingly important in today's mobile-first world, where users may access websites and apps on a range of different devices. Another benefit of designing pages on Figma is that it allows you to create interactive prototypes that can be used to test and validate your designs. This can help you identify usability issues and make improvements before you start coding, ultimately saving time and resources. Finally, designing pages on Figma allows you to collaborate with others in real-time, whether you're working on a team or with a client. This can help ensure that everyone is on the same page and working towards the same goals. In summary, designing pages on Figma is an important step in the design process that allows you to bring all of your previous work together into a cohesive visual representation of your digital product. It allows you to test and validate your designs, create responsive designs, and collaborate with others, ultimately leading to better user experiences and more successful digital products.",
       name: "Building Pages",
       imageUrl: "https://source.unsplash.com/QwAL909kTiY/800x600/",
+      text: " Building Pages ",
     },
   },
   {
     name: "step 3",
-    title: "Build",
+    title: "Development",
     description:
-      "Experience the design and build process like never before with my app. Follow my journey as I showcase my skills and expertise in Figma to design and build a NextJsApp. From ideation to execution, you'll see every step of the process and learn how I solved challenges along the way. This app is the perfect way to see my skills in action and gain inspiration for your own projects. Check it out today!",
-    imageUrl: "https://source.unsplash.com/SYTO3xs06fU/800x600/",
+      "To build this application I chose to use nextJS. I'm using the new appDir feature to structure the pages, and I'm using Jest to take advantage of test driven development. Checkout the github repo to see how I coded the application",
+    images: [
+      {
+        name: "NextJS",
+        imageUrl: "https://source.unsplash.com/9VzoRKfBsMM/800x600/",
+      },
+      {
+        name: "Jest",
+        imageUrl: "https://source.unsplash.com/9VzoRKfBsMM/800x600/",
+      },
+      {
+        name: "Github",
+        imageUrl: "https://source.unsplash.com/9VzoRKfBsMM/800x600/",
+      },
+    ],
     id: 3,
   },
 ];
@@ -62,7 +78,7 @@ export const steps = [
   {
     id: 2,
     title: "Design",
-    href: "/desgin",
+    href: "/design",
     description:
       "The second step is to design the project. I used figma to design the project. And I used TailwindCSS design system as a foundation to quicky build a prototype.",
     imageUrl: "https://source.unsplash.com/tZc3vjPCk-Q/800x600/",

@@ -16,26 +16,26 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/20/solid";
 const products = [
   {
     name: "Story",
-    description: "Get a better understanding of your traffic",
+    description: "See how the story of how we started",
     href: "/story",
     icon: BookOpenIcon,
   },
   {
     name: "Ideation",
-    description: "Speak directly to your customers",
+    description: "Get a better understanding of how I started",
     href: "/ideation",
     icon: LightBulbIcon,
   },
   {
     name: "Design",
-    description: "Speak directly to your customers",
-    href: "/ideation",
+    description: "See how the design of the website came to be",
+    href: "/design",
     icon: DevicePhoneMobileIcon,
   },
 
   {
     name: "Development",
-    description: "Your customers’ data will be safe and secure",
+    description: "See how the development of the website came to be",
     href: "/development",
     icon: RocketLaunchIcon,
   },
@@ -96,7 +96,7 @@ export default function Header() {
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-              Product
+              Story
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
                 aria-hidden="true"
@@ -143,49 +143,7 @@ export default function Header() {
               </Popover.Panel>
             </Transition>
           </Popover>
-
-          <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-              Company
-              <ChevronDownIcon
-                className="h-5 w-5 flex-none text-gray-400"
-                aria-hidden="true"
-              />
-            </Popover.Button>
-
-            <Transition
-              as={Fragment}
-              enter="transition ease-out duration-200"
-              enterFrom="opacity-0 translate-y-1"
-              enterTo="opacity-100 translate-y-0"
-              leave="transition ease-in duration-150"
-              leaveFrom="opacity-100 translate-y-0"
-              leaveTo="opacity-0 translate-y-1"
-            >
-              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-96 rounded-3xl bg-white p-4 shadow-lg ring-1 ring-gray-900/5">
-                {company.map((item) => (
-                  <div key={item.name} className="relative rounded-lg p-4 ">
-                    <a
-                      href={item.href}
-                      className="block text-sm font-semibold leading-6 text-gray-900"
-                    >
-                      {item.name}
-                      <span className="absolute inset-0" />
-                    </a>
-                    <p className="mt-1 text-sm leading-6 text-gray-600">
-                      {item.description}
-                    </p>
-                  </div>
-                ))}
-              </Popover.Panel>
-            </Transition>
-          </Popover>
         </Popover.Group>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Log in <span aria-hidden="true">&rarr;</span>
-          </a>
-        </div>
       </nav>
       <Dialog
         as="div"

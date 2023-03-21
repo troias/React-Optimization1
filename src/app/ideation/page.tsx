@@ -2,9 +2,9 @@ import React from "react";
 import { MobileDropDown } from "@/components/ui/buttons/MobileDropDown";
 import { development_story } from "@/lib/info";
 import TecUsed from "@/components/tec_used/tec_used";
-import Image from "next/image";
-import Link from "next/link";
+
 import NextButton from "@/components/ui/buttons/NextButton.client";
+import ImageDisplay from "@/components/ui/image/ImageDisplay.client";
 
 type Props = {};
 
@@ -21,15 +21,7 @@ export default function page({}: Props) {
         />
       </div>
 
-      <div className="flex justify-center items-center">
-        <Image
-          src={development_story[0].imageUrl}
-          width={500}
-          height={500}
-          className="filter grayscale"
-          alt="Image of my idea"
-        />
-      </div>
+      <ImageDisplay />
 
       <TecUsed />
 

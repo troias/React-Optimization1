@@ -5,10 +5,8 @@ import Layout from "@/components/layout/layout";
 
 export default function Home() {
   return (
-    <div className=" ">
-      <div className="min-h-screen bg-white p-">
-        <Hero />
-      </div>
+    <div className="min-h-screen bg-white ">
+      <Hero />
     </div>
   );
 }
