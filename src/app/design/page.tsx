@@ -7,22 +7,22 @@ import DualImageDisplay from "@/components/ui/image/DualImageDisplay.client";
 
 type Props = {};
 
-export default function page({}: Props) {
+export default function Design({}: Props) {
   return (
     <div>
       <h1 className="text-2xl font-bold text-center py-8">
         {development_story[1].title}
       </h1>
 
+      <MobileDropDown
+        name="Wireframing stage"
+        description={development_story[1].wireframe.description}
+      />
+
       <DualImageDisplay
         img={development_story[1].wireframe.imageUrl}
         orientation="left"
         text={development_story[1].wireframe.text}
-      />
-
-      <MobileDropDown
-        name="Wireframing stage"
-        description={development_story[1].wireframe.description}
       />
 
       <DualImageDisplay
@@ -47,7 +47,9 @@ export default function page({}: Props) {
         description={development_story[1].buildingPages.description}
       />
 
-      <NextButton text="Next" link="/development" />
+      <div className="sm:flex sm:justify-center">
+        <NextButton link="/development" text="Next" />
+      </div>
     </div>
   );
 }

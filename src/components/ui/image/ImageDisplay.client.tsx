@@ -2,46 +2,53 @@
 import React from "react";
 import { useMediaQuery } from "@chakra-ui/react";
 import Image from "next/image";
-import { development_story } from "@/lib/info";
 
-type Props = {};
+type Props = {
+  img?: string;
+  orientation?: "left" | "right" | "center";
+  images?: {
+    imageUrl: string;
+    title: string;
+  }[];
+  text?: string;
+};
 
-export default function ImageDisplay({}: Props) {
+export default function ImageDisplay({
+  img,
+  orientation,
+  images,
+  text,
+}: Props) {
   const [isMobile] = useMediaQuery("(max-width: 640px)");
   const [isIpad] = useMediaQuery("(max-width: 920px)");
-  const { images } = development_story[2];
+
+  const displayImages =
+    Array.isArray(images) && images.length > 0 ? images : [];
+
   return (
-    <div>
-      {isMobile ? (
-        <div className="relative w-full h-96">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      {isMobile && (
+        <div className="col-span-1">
           <Image
-            src={images[0].imageUrl}
-            alt={images[0].title}
+            src={img}
+            alt="Picture of the author"
             width={500}
             height={500}
-            className="rounded-2xl filter grayscale hover:grayscale-0"
           />
         </div>
-      ) : (
-        <div
-          className={
-            isIpad ? "grid grid-cols-2 gap-4" : "grid grid-cols-3 gap-4"
-          }
-        >
-          {images.slice(0, isIpad ? 2 : images.length).map((image, index) => (
-            <div
-              key={index}
-              className="relative flex justify-center w-full h-96 "
-            >
-              <Image
-                src={image.imageUrl}
-                alt={image.title}
-                width={500}
-                height={500}
-                className="rounded-2xl filter grayscale hover:grayscale-0 "
-              />
-            </div>
-          ))}
+      )}
+      {isIpad && !isMobile && (
+        <div className="col-span-1 col-start-2">
+          <Image
+            src={img}
+            alt="Picture of the author"
+            width={500}
+            height={500}
+          />
+
+          <div className="text-center">
+            <p className="text-lg font-bold">{text}</p>
+          </div>
         </div>
       )}
     </div>

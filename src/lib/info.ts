@@ -6,6 +6,7 @@ export const development_story = [
       "Experience the design and build process like never before with my app. Follow my journey as I showcase my skills and expertise in Figma to design and build a NextJsApp. From ideation to execution, you'll see every step of the process and learn how I solved challenges along the way. This app is the perfect way to see my skills in action and gain inspiration for your own projects. Check it out today!",
     imageUrl: "https://source.unsplash.com/SYTO3xs06fU/800x600/",
     id: 1,
+    text: "Idea generation is the starting point for any successful project. At this stage, the possibilities are endless, and creative exploration is encouraged. Our team is dedicated to generating ideas that are fresh, innovative, and tailored to your unique needs. We use a variety of methods to spark inspiration and foster creativity, from brainstorming sessions to mind mapping and sketching. Let us help you turn your vision into reality.",
   },
   {
     id: 2,
@@ -15,21 +16,21 @@ export const development_story = [
       description:
         "The next step is to start designing the app. Wireframing is quicky done to get a feel for what components I think are needed.",
       imageUrl: "https://source.unsplash.com/4UGmm3WRUoQ/800x600/",
-      text: " wireframe ",
+      text: " Looking to bring your web design ideas to life? Start with wireframing! Creating a wireframe allows you to map out the structure of your site, plan its functionality, and identify potential user experience issues before you start designing. It's the first step to building a successful website. Let this picture inspire you to start wireframing your next project! ",
     },
     designSystem: {
       description:
         "The purpose of building a design system in Figma for a web app is to establish a consistent and cohesive visual language for the app's interface. A design system is a collection of reusable design elements, such as components, styles, and guidelines, that can be easily accessed and used across the app's interface. By creating and maintaining a design system in Figma, teams can work more efficiently, reduce design inconsistencies, and improve the overall user experience. Some benefits of building a design system in Figma for a web app include: Consistency: A design system ensures that all elements of the app's interface are visually consistent and aligned with the brand's guidelines. Efficiency: A design system enables designers and developers to work more efficiently by providing a centralized resource for all design assets and guidelines.Scalability: A design system can be easily scaled as the app evolves and new features are added. Collaboration: A design system promotes collaboration between designers, developers, and stakeholders by providing a shared understanding of the app's visual language. Accessibility: A design system can incorporate accessibility guidelines to ensure that the app is usable by everyone, including people with disabilities. Overall, building a design system in Figma is a valuable investment in the development of a web app, as it enables teams to create a more consistent, efficient, and user-friendly product.",
       name: "Design System",
       imageUrl: "https://source.unsplash.com/9VzoRKfBsMM/800x600/",
-      text: " Design System ",
+      text: "Design systems are the backbone of successful design. By establishing a cohesive set of guidelines and principles for your brand's visual identity, you can create consistency across all touchpoints, from your website to your marketing materials. A well-crafted design system can streamline your design process, increase efficiency, and ensure a polished, professional look and feel for your brand. Let this picture inspire you to develop a design system that will elevate your brand to the next level!",
     },
     buildingPages: {
       description:
         "After building wireframes, design systems, and components, it's important to move on to designing pages on Figma. This step allows you to bring all of your previous work together into a cohesive visual representation of your digital product. Designing pages on Figma allows you to see how your components and design system work together in the context of a real page. This can help you identify any inconsistencies or issues with your design system, and make any necessary adjustments before you start coding. Additionally, designing pages on Figma allows you to create responsive designs that work well on a variety of screen sizes and devices. This is increasingly important in today's mobile-first world, where users may access websites and apps on a range of different devices. Another benefit of designing pages on Figma is that it allows you to create interactive prototypes that can be used to test and validate your designs. This can help you identify usability issues and make improvements before you start coding, ultimately saving time and resources. Finally, designing pages on Figma allows you to collaborate with others in real-time, whether you're working on a team or with a client. This can help ensure that everyone is on the same page and working towards the same goals. In summary, designing pages on Figma is an important step in the design process that allows you to bring all of your previous work together into a cohesive visual representation of your digital product. It allows you to test and validate your designs, create responsive designs, and collaborate with others, ultimately leading to better user experiences and more successful digital products.",
       name: "Building Pages",
       imageUrl: "https://source.unsplash.com/QwAL909kTiY/800x600/",
-      text: " Building Pages ",
+      text: "Building pages for your website can be a daunting task, but with the right approach, it can be a rewarding one. Each page presents an opportunity to communicate your brand's message, showcase your products or services, and engage your audience. By focusing on user experience, functionality, and aesthetics, you can create pages that not only look great but also serve a purpose. Let this picture inspire you to start building pages that captivate your audience and drive results for your business.",
     },
   },
   {

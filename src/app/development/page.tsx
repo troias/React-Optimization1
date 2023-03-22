@@ -20,7 +20,7 @@ export default function Development({}: Props) {
       <MobileDropDown name={title} description={description} />
       <ImageDisplay />
 
-      <div className="lg:flex lg:justify-center">
+      <div className="sm:flex sm:justify-center">
         <NextButton link="/" text="Go to Home" />
       </div>
     </>

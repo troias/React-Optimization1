@@ -8,7 +8,7 @@ import ImageDisplay from "@/components/ui/image/ImageDisplay.client";
 
 type Props = {};
 
-export default function page({}: Props) {
+export default function Ideation({}: Props) {
   return (
     <div>
       <h1 className="text-3xl font-bold text-gray-900 text-center py-8">
@@ -21,11 +21,17 @@ export default function page({}: Props) {
         />
       </div>
 
-      <ImageDisplay />
+      <ImageDisplay
+        img={development_story[0].imageUrl}
+        text={development_story[0].text}
+        orientation="left"
+      />
 
       <TecUsed />
 
-      <NextButton text="Next" link="/design" />
+      <div className="sm:flex sm:justify-center">
+        <NextButton link="/design" text="Next" />
+      </div>
     </div>
   );
 }
