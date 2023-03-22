@@ -11,7 +11,7 @@ type Props = {};
 export default function Ideation({}: Props) {
   return (
     <div>
-      <h1 className="text-3xl font-bold text-gray-900 text-center py-8">
+      <h1 className="text-2xl lg:text-3xl font-bold text-gray-900 text-center py-8">
         {development_story[0].title}
       </h1>
       <div className="py-8">
@@ -23,10 +23,10 @@ export default function Ideation({}: Props) {
 
       <ImageDisplay
         // img={development_story[0].imageUrl}
-        images={development_story[2].images}
+        images={development_story[0].images}
         img={development_story[0].imageUrl}
         text={development_story[0].text}
-        orientation="left"
+        orientation="center"
       />
 
       <TecUsed />

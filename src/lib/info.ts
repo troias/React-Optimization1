@@ -7,6 +7,23 @@ export const development_story = [
     imageUrl: "https://source.unsplash.com/SYTO3xs06fU/800x600/",
     id: 1,
     text: "Idea generation is the starting point for any successful project. At this stage, the possibilities are endless, and creative exploration is encouraged. Our team is dedicated to generating ideas that are fresh, innovative, and tailored to your unique needs. We use a variety of methods to spark inspiration and foster creativity, from brainstorming sessions to mind mapping and sketching. Let us help you turn your vision into reality.",
+    images: [
+      {
+        name: "NextJS",
+        imageUrl: "https://source.unsplash.com/9VzoRKfBsMM/800x600/",
+        text: "Ideation is vital in web development as it sets the groundwork for the project. It involves creating and refining creative ideas for the website's design, functionality, and user experience. Effective ideation helps identify the website's goals, target audience, and unique selling points, resulting in a visually appealing, easy-to-use, and functional website. Without ideation, web development projects risk being disjointed, ineffective, and difficult to use. ",
+      },
+      {
+        name: "Jest",
+        imageUrl: "https://source.unsplash.com/9VzoRKfBsMM/800x600/",
+        text: "NextJS ",
+      },
+      {
+        name: "Github",
+        imageUrl: "https://source.unsplash.com/9VzoRKfBsMM/800x600/",
+        text: "NextJS ",
+      },
+    ],
   },
   {
     id: 2,

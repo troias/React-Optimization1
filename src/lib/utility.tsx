@@ -22,8 +22,8 @@ export const displayImg = (
       {images.slice(0, 2).map((image, index) => (
         <React.Fragment key={index}>
           {index === 0 && (
-            <div className=" flex justify-center items-center  ">
-              <p className="text-lg font-bold prose  justify-center align-middle">
+            <div>
+              <p className="text-base font-bold   text-gray-600">
                 {image.text}
               </p>
             </div>
@@ -44,7 +44,11 @@ export const displayImg = (
       {images.slice(0, 3).map((image, index) => (
         <React.Fragment key={index}>
           {index === 2 && (
-            <p className="text-lg font-bold prose">{image.text}</p>
+            <div>
+              <p className="text-base font-bold   text-gray-600">
+                {image.text}
+              </p>
+            </div>
           )}
           {index === 0 || index === 1 ? (
             <Image
@@ -68,9 +72,14 @@ export const displayImg = (
             alt="Picture of the author"
             width={500}
             height={500}
+            className="sm:aspect-auto lg:aspect-square"
           />
           {index === 0 && (
-            <p className="text-lg font-bold prose">{image.text}</p>
+            <div>
+              <p className="text-base font-bold   text-gray-600">
+                {image.text}
+              </p>
+            </div>
           )}
         </React.Fragment>
       ))}
@@ -94,10 +103,14 @@ export const displayImg = (
                 alt="Picture of the author"
                 width={500}
                 height={500}
-                className="col-span-1 flex justify-center items-center"
+                className="col-span-1 flex justify-center items-center "
               />
               {index === 0 && (
-                <p className="text-lg font-bold prose">{image.text}</p>
+                <div>
+                  <p className="text-base font-bold   text-gray-600">
+                    {image.text}
+                  </p>
+                </div>
               )}
             </React.Fragment>
           ))}

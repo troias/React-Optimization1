@@ -22,8 +22,8 @@ export default function ImageDisplay({
   text,
 }: Props) {
   const [isMobile] = useMediaQuery("(max-width: 640px)");
-  const [isIpad] = useMediaQuery("(max-width: 920px)");
-  const [isDesktop] = useMediaQuery("(min-width: 920px)");
+  const [isIpad] = useMediaQuery("(max-width: 1030px)");
+  const [isDesktop] = useMediaQuery("(min-width: 1032px)");
 
   const displayImages =
     Array.isArray(images) && images.length > 0 ? images : [];
@@ -44,13 +44,15 @@ export default function ImageDisplay({
             height={600}
           />
           <div className="py-8 ">
-            <p className="text-lg font-bold prose ">{text}</p>
+            <p className=" text-base font-bold  flex justify-center items-center px-4 text-gray-600 hover:text-lg ">
+              {text}
+            </p>
           </div>
         </div>
       )}
       {isIpad && !isMobile && (
         <>
-          <div className="col-span-1 flex justify-center items-center aspect-auto w-full">
+          <div className="col-span-1 flex justify-center items-center aspect-auto w-full ">
             <Image
               src={img}
               alt="Picture of the author"
@@ -59,7 +61,9 @@ export default function ImageDisplay({
             />
           </div>
           <div className="py-8   ">
-            <p className="text-lg font-bold prose ">{text}</p>
+            <p className="text-base font-bold  flex justify-center items-center px-4 text-gray-600">
+              {text}
+            </p>
           </div>
         </>
       )}
