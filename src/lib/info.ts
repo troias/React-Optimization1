@@ -42,14 +42,17 @@ export const development_story = [
       {
         name: "NextJS",
         imageUrl: "https://source.unsplash.com/9VzoRKfBsMM/800x600/",
+        text: "NextJS ",
       },
       {
         name: "Jest",
         imageUrl: "https://source.unsplash.com/9VzoRKfBsMM/800x600/",
+        text: "NextJS ",
       },
       {
         name: "Github",
         imageUrl: "https://source.unsplash.com/9VzoRKfBsMM/800x600/",
+        text: "NextJS ",
       },
     ],
     id: 3,

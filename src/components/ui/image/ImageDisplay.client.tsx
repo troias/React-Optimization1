@@ -2,6 +2,7 @@
 import React from "react";
 import { useMediaQuery } from "@chakra-ui/react";
 import Image from "next/image";
+import { displayImg } from "@/lib/utility";
 
 type Props = {
   img?: string;
@@ -9,6 +10,7 @@ type Props = {
   images?: {
     imageUrl: string;
     title: string;
+    text: string;
   }[];
   text?: string;
 };
@@ -21,36 +23,47 @@ export default function ImageDisplay({
 }: Props) {
   const [isMobile] = useMediaQuery("(max-width: 640px)");
   const [isIpad] = useMediaQuery("(max-width: 920px)");
+  const [isDesktop] = useMediaQuery("(min-width: 920px)");
 
   const displayImages =
     Array.isArray(images) && images.length > 0 ? images : [];
 
-  return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      {isMobile && (
-        <div className="col-span-1">
-          <Image
-            src={img}
-            alt="Picture of the author"
-            width={500}
-            height={500}
-          />
-        </div>
-      )}
-      {isIpad && !isMobile && (
-        <div className="col-span-1 col-start-2">
-          <Image
-            src={img}
-            alt="Picture of the author"
-            width={500}
-            height={500}
-          />
+  const displayImage =
+    displayImages.length > 0 && displayImg(displayImages, orientation);
 
-          <div className="text-center">
-            <p className="text-lg font-bold">{text}</p>
+  //display 2 images wtih 1 text box in 3 col grid on desktop and chose orientation based on props
+
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 gap md:gap-10">
+      {isMobile && (
+        <div className="col-span-1  aspect-auto">
+          <Image
+            src={img}
+            alt="Picture of the author"
+            width={600}
+            height={600}
+          />
+          <div className="py-8 ">
+            <p className="text-lg font-bold prose ">{text}</p>
           </div>
         </div>
       )}
+      {isIpad && !isMobile && (
+        <>
+          <div className="col-span-1 flex justify-center items-center aspect-auto w-full">
+            <Image
+              src={img}
+              alt="Picture of the author"
+              width={650}
+              height={500}
+            />
+          </div>
+          <div className="py-8   ">
+            <p className="text-lg font-bold prose ">{text}</p>
+          </div>
+        </>
+      )}
+      {isDesktop && displayImage}
     </div>
   );
 }

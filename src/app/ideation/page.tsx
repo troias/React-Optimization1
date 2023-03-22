@@ -22,6 +22,8 @@ export default function Ideation({}: Props) {
       </div>
 
       <ImageDisplay
+        // img={development_story[0].imageUrl}
+        images={development_story[2].images}
         img={development_story[0].imageUrl}
         text={development_story[0].text}
         orientation="left"
