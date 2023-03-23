@@ -8,7 +8,7 @@ export const development_story = [
     },
 
     description:
-      "One of the primary hurdles I encountered while embarking on the website-building process was determining the most effective approach for showcasing my development and design prowess within a streamlined NextJS application. My initial focus was on identifying the optimal tools to utilize in tackling this challenge, including leveraging Tailwind Css to demonstrate my stylistic abilities, harnessing NextJS to highlight my React expertise, and utilizing Jest to showcase my proficiency in Test-Driven Development. I also sought to exhibit my skill in designing optimal user experiences, which I achieved through utilizing Figma in a simplified, yet impactful manner.",
+      "One of the primary hurdles I encountered while embarking on the website-building process was determining the most effective approach for showcasing my development and design prowess within a streamlined NextJS application. My initial focus was on identifying the optimal tools to utilize in tackling this challenge, including leveraging TailwindCSS to demonstrate my stylistic abilities, harnessing NextJS to highlight my React expertise, and utilizing Jest to showcase my proficiency in Test-Driven Development. I also sought to exhibit my skill in designing optimal user experiences, which I achieved through utilizing Figma in a simplified, yet impactful manner.",
     imageUrl: "https://source.unsplash.com/SYTO3xs06fU/800x600/",
     id: 1,
     text: "Idea generation is the starting point for any successful project. At this stage, the possibilities are endless, and creative exploration is encouraged. Our team is dedicated to generating ideas that are fresh, innovative, and tailored to your unique needs. We use a variety of methods to spark inspiration and foster creativity, from brainstorming sessions to mind mapping and sketching. Let us help you turn your vision into reality.",
@@ -34,9 +34,13 @@ export const development_story = [
     id: 2,
     name: "step 2 ",
     title: "Design",
+    externalURL: {
+      text: "check out the design on figma",
+      url: "https://www.figma.com/file/8sIkGSz8H6H4wGam12ednp/project-2?node-id=26%3A826&t=7x5tlnhD6nliaQSH-1",
+    },
     wireframe: {
       description:
-        "The next step is to start designing the app. Wireframing is quicky done to get a feel for what components I think are needed.",
+        "Wireframing is critical in web development as it helps establish the website's structure and layout before any coding. It enables easy modifications and adjustments, serves as a communication tool, saves time and resources, and reduces the need for rework",
       imageUrl: "https://source.unsplash.com/4UGmm3WRUoQ/800x600/",
       text: " Looking to bring your web design ideas to life? Start with wireframing! Creating a wireframe allows you to map out the structure of your site, plan its functionality, and identify potential user experience issues before you start designing. It's the first step to building a successful website. Let this picture inspire you to start wireframing your next project! ",
     },
@@ -63,12 +67,12 @@ export const development_story = [
     images: [
       {
         name: "NextJS",
-        imageUrl: "https://source.unsplash.com/9VzoRKfBsMM/800x600/",
+        imageUrl: "/devlopment-1.png",
         text: "The importance of development lies in its ability to facilitate the creation of dynamic and interactive web experiences that meet the evolving needs of users and businesses. Through development, web developers can continually enhance their websites and applications, ensuring they remain current, efficient, and secure. ",
       },
       {
         name: "Jest",
-        imageUrl: "https://source.unsplash.com/9VzoRKfBsMM/800x600/",
+        imageUrl: "/devlopment-1.png",
         text: "NextJS ",
       },
       {

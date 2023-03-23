@@ -31,7 +31,7 @@ export const MobileDropDown = (props: Props) => {
     <>
       {/* Header section of dropdown */}
       <div
-        className="flex justify-between items-center w-full px-4 py-6 border-b border-gray-300/40 bg-gray-300/70 cursor-pointer hover:bg-slate-300/70"
+        className="flex justify-between items-center w-full px-4 py-6 border-b border-gray-300/40 bg-gray-200/60 cursor-pointer hover:bg-slate-300/70 rounded-sm"
         onClick={clickHandler}
         // Add accessibility attribute to indicate this is a button
         role="button"
@@ -53,7 +53,7 @@ export const MobileDropDown = (props: Props) => {
       {/* Content section of dropdown */}
       {isOpen && (
         <div className="p-4">
-          <p className="sm:text-lg mg:text:lg text-gray-500">
+          <p className="sm:text-lg mg:text:lg text-gray-600">
             {descriptionArray}
           </p>
           {externalURL && (
@@ -63,7 +63,7 @@ export const MobileDropDown = (props: Props) => {
           {externalURL && (
             <a
               href={externalURL.url}
-              className="text-sm text-gray-500 underline"
+              className="text-sm text-gray-500 underline hover:opacity-75 hover:scale-105 hover:border-gray-200"
             >
               {externalURL.url}
             </a>

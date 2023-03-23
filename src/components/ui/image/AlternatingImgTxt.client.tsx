@@ -40,7 +40,7 @@ export default function AlternatingImgTxt({ oriantation, img, text }: Props) {
             </p>
           </div>
           {/* Image column */}
-          <div className="col-span-1 flex justify-center">
+          <div className="col-span-1 flex justify-center ">
             <Image
               src={img}
               alt="Picture of the author"
@@ -48,6 +48,7 @@ export default function AlternatingImgTxt({ oriantation, img, text }: Props) {
               height="500"
               // Add accessibility attribute to describe image content
               aria-label="Image"
+              className=" "
             />
           </div>
         </>

@@ -1,18 +1,48 @@
 import Image from "next/image";
 import React from "react";
 
+// export const descriptionFormatter = (description: string) => {
+//   const descriptionArray = description.split(".").map((item, index) => {
+//     return (
+//       <span key={index}>
+//         {item}
+//         .
+//         <br />
+//         <br />
+//       </span>
+//     );
+//   });
+//   return descriptionArray;
+// };
+
 export const descriptionFormatter = (description: string) => {
-  const descriptionArray = description.split(".").map((item, index) => {
-    return (
-      <span key={index}>
-        {item}
-        <br />
-        <br />
-      </span>
-    );
-  });
-  return descriptionArray;
+  const paragraphArray = description.split(".");
+  let paragraphs = [];
+  let currentParagraph = "";
+
+  for (let i = 0; i < paragraphArray.length; i++) {
+    const sentence = paragraphArray[i].trim() + ".";
+    currentParagraph += sentence;
+    const nextSentence = paragraphArray[i + 1]
+      ? paragraphArray[i + 1].trim()
+      : "";
+
+    if (currentParagraph.length + nextSentence.length > 120) {
+      paragraphs.push(currentParagraph);
+      currentParagraph = "";
+    }
+  }
+  if (currentParagraph.length > 0) {
+    paragraphs.push(currentParagraph);
+  }
+
+  return paragraphs.map((paragraph, index) => (
+    <p key={index} className="mb-4">
+      {paragraph}
+    </p>
+  ));
 };
+
 export const displayImg = (
   images: { imageUrl: string; title: string; text: string }[],
   orientation: string | undefined
@@ -68,7 +98,7 @@ export const displayImg = (
             alt="Picture of the author"
             width={500}
             height={500}
-            className="sm:aspect-auto lg:aspect-square"
+            className="aspect-square"
           />
           {index === 0 && (
             <div>

@@ -13,6 +13,7 @@ type Props = {
     text: string;
   }[];
   text?: string;
+  externalUrl: string;
 };
 
 export default function ImageDisplay({
