@@ -8,7 +8,7 @@ import ImageDisplay from "@/components/ui/image/ImageDisplay.client";
 type Props = {};
 
 export default function Development({}: Props) {
-  const { title, description, images } = development_story[2];
+  const { title, description, images, text } = development_story[2];
 
   console.log(images);
 
@@ -18,7 +18,12 @@ export default function Development({}: Props) {
         Development
       </h1>
       <MobileDropDown name={title} description={description} />
-      <ImageDisplay />
+      <ImageDisplay
+        img="https://source.unsplash.com/9VzoRKfBsMM/800x600/"
+        images={images}
+        alt={title}
+        text={text}
+      />
 
       <div className="sm:flex sm:justify-center">
         <NextButton link="/" text="Go to Home" />

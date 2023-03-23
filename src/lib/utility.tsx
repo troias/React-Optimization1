@@ -23,9 +23,7 @@ export const displayImg = (
         <React.Fragment key={index}>
           {index === 0 && (
             <div>
-              <p className="text-base font-bold   text-gray-600">
-                {image.text}
-              </p>
+              <p className="text-lg font-bold   text-gray-500">{image.text}</p>
             </div>
           )}
           <Image
@@ -45,9 +43,7 @@ export const displayImg = (
         <React.Fragment key={index}>
           {index === 2 && (
             <div>
-              <p className="text-base font-bold   text-gray-600">
-                {image.text}
-              </p>
+              <p className="text-lg font-bold   text-gray-500">{image.text}</p>
             </div>
           )}
           {index === 0 || index === 1 ? (
@@ -76,9 +72,7 @@ export const displayImg = (
           />
           {index === 0 && (
             <div>
-              <p className="text-base font-bold   text-gray-600">
-                {image.text}
-              </p>
+              <p className="text-lg font-bold   text-gray-500 ">{image.text}</p>
             </div>
           )}
         </React.Fragment>

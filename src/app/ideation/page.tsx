@@ -18,6 +18,7 @@ export default function Ideation({}: Props) {
         <MobileDropDown
           name={development_story[0].name}
           description={development_story[0].description}
+          externalURL={development_story[0].externalURL}
         />
       </div>
 
@@ -31,7 +32,7 @@ export default function Ideation({}: Props) {
 
       <TecUsed />
 
-      <div className="sm:flex sm:justify-center">
+      <div className="sm:flex sm:justify-center min-w-[60px]">
         <NextButton link="/design" text="Next" />
       </div>
     </div>

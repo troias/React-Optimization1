@@ -2,8 +2,13 @@ export const development_story = [
   {
     name: "Ideation",
     title: "Ideation stage",
+    externalURL: {
+      text: "check out the design on figma",
+      url: "https://www.figma.com/file/8sIkGSz8H6H4wGam12ednp/project-2?node-id=26%3A826&t=7x5tlnhD6nliaQSH-1",
+    },
+
     description:
-      "Experience the design and build process like never before with my app. Follow my journey as I showcase my skills and expertise in Figma to design and build a NextJsApp. From ideation to execution, you'll see every step of the process and learn how I solved challenges along the way. This app is the perfect way to see my skills in action and gain inspiration for your own projects. Check it out today!",
+      "One of the primary hurdles I encountered while embarking on the website-building process was determining the most effective approach for showcasing my development and design prowess within a streamlined NextJS application. My initial focus was on identifying the optimal tools to utilize in tackling this challenge, including leveraging Tailwind Css to demonstrate my stylistic abilities, harnessing NextJS to highlight my React expertise, and utilizing Jest to showcase my proficiency in Test-Driven Development. I also sought to exhibit my skill in designing optimal user experiences, which I achieved through utilizing Figma in a simplified, yet impactful manner.",
     imageUrl: "https://source.unsplash.com/SYTO3xs06fU/800x600/",
     id: 1,
     text: "Idea generation is the starting point for any successful project. At this stage, the possibilities are endless, and creative exploration is encouraged. Our team is dedicated to generating ideas that are fresh, innovative, and tailored to your unique needs. We use a variety of methods to spark inspiration and foster creativity, from brainstorming sessions to mind mapping and sketching. Let us help you turn your vision into reality.",
@@ -59,7 +64,7 @@ export const development_story = [
       {
         name: "NextJS",
         imageUrl: "https://source.unsplash.com/9VzoRKfBsMM/800x600/",
-        text: "NextJS ",
+        text: "The importance of development lies in its ability to facilitate the creation of dynamic and interactive web experiences that meet the evolving needs of users and businesses. Through development, web developers can continually enhance their websites and applications, ensuring they remain current, efficient, and secure. ",
       },
       {
         name: "Jest",
@@ -73,6 +78,7 @@ export const development_story = [
       },
     ],
     id: 3,
+    text: "Development is crucial in web development because it involves the creation, implementation, and improvement of web applications and websites. Without development, it would be impossible to create dynamic and interactive web experiences that meet the needs of users and businesses alike. Development enables web developers to continually enhance their websites and applications to ensure they remain up-to-date, efficient, and secure. ",
   },
 ];
 
