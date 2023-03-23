@@ -4,12 +4,13 @@ import { useState } from "react";
 import { development_story } from "../.././lib/info";
 
 export default function Story() {
+  const [open, setOpen] = useState(false);
   return (
     <div className="bg-white shadow overflow-hidden sm:rounded-lg">
       <div className="px-4 py-5 sm:px-6">
         <h3 className="text-lg leading-6 font-medium text-gray-900">Story</h3>
+
         {development_story.map((item, index) => {
-          const [open, setOpen] = useState(false);
           return (
             <div key={index} className="mt-5">
               <div
