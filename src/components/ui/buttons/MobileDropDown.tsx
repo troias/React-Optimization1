@@ -17,6 +17,9 @@ export const MobileDropDown = (props: Props) => {
   // Get description and add 2 lines after fullstop
   const descriptionArray = descriptionFormatter(props.description);
 
+  //make sure the description is not empty
+  const description = descriptionArray.length > 0 ? descriptionArray : [""];
+
   // State to keep track of whether dropdown is open or closed
   const [isOpen, setIsOpen] = useState(false);
 
@@ -54,7 +57,7 @@ export const MobileDropDown = (props: Props) => {
       {isOpen && (
         <div className="p-4">
           <p className="sm:text-lg mg:text:lg text-gray-600">
-            {descriptionArray}
+            {descriptionArray || description}
           </p>
           {externalURL && (
             <h4 className="text-sm text-gray-600 py-2">{externalURL.text} </h4>

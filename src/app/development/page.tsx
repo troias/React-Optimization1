@@ -8,7 +8,7 @@ type Props = {};
 
 export default function Development({}: Props) {
   // Destructure the necessary properties from the development_story object
-  const { title, description, images, text } = development_story[2];
+  const { title, description, images, text, name } = development_story[2];
 
   return (
     <>
@@ -32,7 +32,7 @@ export default function Development({}: Props) {
         <ImageDisplay
           img="https://source.unsplash.com/9VzoRKfBsMM/800x600/"
           images={images}
-          alt={title}
+          alt={name}
           text={text}
         />
       </figure>

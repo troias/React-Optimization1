@@ -14,17 +14,17 @@ export const development_story = [
     text: "Idea generation is the starting point for any successful project. At this stage, the possibilities are endless, and creative exploration is encouraged. Our team is dedicated to generating ideas that are fresh, innovative, and tailored to your unique needs. We use a variety of methods to spark inspiration and foster creativity, from brainstorming sessions to mind mapping and sketching. Let us help you turn your vision into reality.",
     images: [
       {
-        name: "NextJS",
+        title: "NextJS",
         imageUrl: "https://source.unsplash.com/9VzoRKfBsMM/800x600/",
         text: "Ideation is vital in web development as it sets the groundwork for the project. It involves creating and refining creative ideas for the website's design, functionality, and user experience. Effective ideation helps identify the website's goals, target audience, and unique selling points, resulting in a visually appealing, easy-to-use, and functional website. Without ideation, web development projects risk being disjointed, ineffective, and difficult to use. ",
       },
       {
-        name: "Jest",
+        title: "Jest",
         imageUrl: "https://source.unsplash.com/9VzoRKfBsMM/800x600/",
         text: "NextJS ",
       },
       {
-        name: "Github",
+        title: "Github",
         imageUrl: "https://source.unsplash.com/9VzoRKfBsMM/800x600/",
         text: "NextJS ",
       },
@@ -34,6 +34,8 @@ export const development_story = [
     id: 2,
     name: "step 2 ",
     title: "Design",
+    description:
+      "One of the primary hurdles I encountered while embarking on the website-building process was determining the most effective approach for showcasing my development and design prowess within a streamlined NextJS application. My initial focus was on identifying the optimal tools to utilize in tackling this challenge, including leveraging TailwindCSS to demonstrate my stylistic abilities, harnessing NextJS to highlight my React expertise, and utilizing Jest to showcase my proficiency in Test-Driven Development. I also sought to exhibit my skill in designing optimal user experiences, which I achieved through utilizing Figma in a simplified, yet impactful manner.",
     externalURL: {
       text: "check out the design on figma",
       url: "https://www.figma.com/file/8sIkGSz8H6H4wGam12ednp/project-2?node-id=26%3A826&t=7x5tlnhD6nliaQSH-1",
@@ -66,17 +68,17 @@ export const development_story = [
       "To build this application I chose to use nextJS. I'm using the new appDir feature to structure the pages, and I'm using Jest to take advantage of test driven development. Checkout the github repo to see how I coded the application",
     images: [
       {
-        name: "NextJS",
+        title: "NextJS",
         imageUrl: "/devlopment-1.png",
         text: "The importance of development lies in its ability to facilitate the creation of dynamic and interactive web experiences that meet the evolving needs of users and businesses. Through development, web developers can continually enhance their websites and applications, ensuring they remain current, efficient, and secure. ",
       },
       {
-        name: "Jest",
+        title: "Jest",
         imageUrl: "/devlopment-1.png",
         text: "NextJS ",
       },
       {
-        name: "Github",
+        title: "Github",
         imageUrl: "https://source.unsplash.com/9VzoRKfBsMM/800x600/",
         text: "NextJS ",
       },

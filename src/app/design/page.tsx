@@ -18,7 +18,7 @@ export default function Design({}: Props) {
       {/* Wireframing stage */}
       <MobileDropDown
         name="Wireframing stage"
-        description={development_story[1].wireframe.description}
+        description={development_story[1]?.wireframe?.description || ""}
         externalURL={development_story[1].externalURL}
       />
 
@@ -26,29 +26,29 @@ export default function Design({}: Props) {
       <DualImageDisplay
         img="/wireframe.png"
         orientation="left"
-        text={development_story[1].wireframe.text}
+        text={development_story[1]?.wireframe?.text || ""}
       />
 
       {/* Building Design System */}
       <MobileDropDown
         name="Building Design System"
-        description={development_story[1].designSystem.description}
+        description={development_story[1]?.designSystem?.description || ""}
       />
       <DualImageDisplay
         img={"/design-system.png"}
         orientation="right"
-        text={development_story[1].designSystem.text}
+        text={development_story[1]?.designSystem?.text || ""}
       />
 
       {/* Building pages */}
       <MobileDropDown
-        name={development_story[1].buildingPages.name}
-        description={development_story[1].buildingPages.description}
+        name={development_story[1]?.buildingPages?.name || ""}
+        description={development_story[1]?.buildingPages?.description || ""}
       />
       <DualImageDisplay
         img={"/pages.png"}
         orientation="left"
-        text={development_story[1].buildingPages.text}
+        text={development_story[1]?.buildingPages?.text || ""}
       />
 
       {/* Next button */}

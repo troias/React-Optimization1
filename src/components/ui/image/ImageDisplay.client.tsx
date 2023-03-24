@@ -13,7 +13,8 @@ type Props = {
     text: string;
   }[];
   text?: string;
-  externalUrl: string;
+  externalUrl?: string;
+  alt?: string;
 };
 
 export default function ImageDisplay({
@@ -39,7 +40,7 @@ export default function ImageDisplay({
       {isMobile && (
         <div className="col-span-1  aspect-auto">
           <Image
-            src={img}
+            src={img || "/wireframe.png"}
             alt="Picture of the author"
             width={600}
             height={600}
@@ -55,7 +56,7 @@ export default function ImageDisplay({
         <>
           <div className="col-span-1 flex justify-center items-center aspect-auto w-full ">
             <Image
-              src={img}
+              src={img || "/wireframe.png"}
               alt="Picture of the author"
               width={650}
               height={500}
