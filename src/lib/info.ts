@@ -70,7 +70,7 @@ export const development_story = [
       {
         title: "NextJS",
         imageUrl: "/devlopment-1.png",
-        text: "The importance of development lies in its ability to facilitate the creation of dynamic and interactive web experiences that meet the evolving needs of users and businesses. Through development, web developers can continually enhance their websites and applications, ensuring they remain current, efficient, and secure. ",
+        text: "The importance of development lies in its ability to facilitate the creation of dynamic and interactive web experiences that meet the evolving needs of users and businesses. ",
       },
       {
         title: "Jest",

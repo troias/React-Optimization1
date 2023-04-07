@@ -5,7 +5,7 @@ import Layout from "@/components/layout/layout";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white ">
+    <div className="min-h-screen bg-white py-24 ">
       <Hero />
     </div>
   );

@@ -23,7 +23,7 @@ export default function Story() {
             ))}
           </h2>
           <p
-            className="mt-2 text-lg leading-8 text-gray-600"
+            className="mt-2 text-lg leading-8 text-gray-600 py-8"
             data-testid="description"
           >
             {pageInfo.map((info) => (

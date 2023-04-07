@@ -34,6 +34,7 @@ export default function Development({}: Props) {
           images={images}
           alt={name}
           text={text}
+          orientation="center"
         />
       </figure>
       <div className="sm:flex sm:justify-center py-8">
