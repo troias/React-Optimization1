@@ -16,7 +16,7 @@ export default function Ideation({}: Props) {
       </h1>
 
       {/* Mobile dropdown */}
-      <div className="py-8">
+      <div>
         <MobileDropDown
           name={development_story[0].name}
           description={development_story[0].description}
@@ -34,10 +34,12 @@ export default function Ideation({}: Props) {
       />
 
       {/* Technologies used */}
-      <TecUsed />
+      <div className="py-8">
+        <TecUsed />
+      </div>
 
       {/* Next button */}
-      <div className="sm:flex sm:justify-center min-w-[60px]">
+      <div className="sm:flex sm:justify-center min-w-[60px] py-8">
         <NextButton link="/design" text="Next" />
       </div>
     </div>

@@ -26,7 +26,7 @@ export default function AlternatingImgTxt({ oriantation, img, text }: Props) {
           </div>
           {/* Text column */}
           <div className="col-span-1 flex justify-center items-center">
-            <p className="text-center text-lg text-gray-500 font-bold">
+            <p className="text-center text-lg text-gray-800 font-bold">
               {text}
             </p>
           </div>
@@ -35,7 +35,7 @@ export default function AlternatingImgTxt({ oriantation, img, text }: Props) {
         <>
           {/* Text column */}
           <div className="col-span-1 flex justify-center items-center">
-            <p className="text-center text-lg text-gray-500 font-bold">
+            <p className="text-center text-lg text-gray-800 font-bold">
               {text}
             </p>
           </div>

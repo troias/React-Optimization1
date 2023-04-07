@@ -53,7 +53,7 @@ export const displayImg = (
         <React.Fragment key={index}>
           {index === 0 && (
             <div>
-              <p className="text-lg font-bold   text-gray-500">{image.text}</p>
+              <p className="text-lg font-bold   text-gray-900">{image.text}</p>
             </div>
           )}
           <Image
@@ -73,7 +73,7 @@ export const displayImg = (
         <React.Fragment key={index}>
           {index === 2 && (
             <div>
-              <p className="text-lg font-bold   text-gray-500">{image.text}</p>
+              <p className="text-lg font-bold   text-gray-900">{image.text}</p>
             </div>
           )}
           {index === 0 || index === 1 ? (
@@ -101,8 +101,10 @@ export const displayImg = (
             className="aspect-square"
           />
           {index === 0 && (
-            <div>
-              <p className="text-lg font-bold   text-gray-500 ">{image.text}</p>
+            <div className="flex items-center">
+              <p className="text-lg font-bold  text-gray-900   ">
+                {image.text}
+              </p>
             </div>
           )}
         </React.Fragment>

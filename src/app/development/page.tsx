@@ -13,7 +13,7 @@ export default function Development({}: Props) {
   return (
     <>
       {/* Use h1 element for main heading */}
-      <h1 className="text-lg md:text-2xl font-bold text-center py-6">
+      <h1 className="text-lg md:text-2xl font-bold text-center py-8">
         Development
       </h1>
       {/* Wrap MobileDropDown component with a section element and add aria-label */}
@@ -28,7 +28,7 @@ export default function Development({}: Props) {
         />
       </section>
       {/* Wrap ImageDisplay component with a figure element and add alt attribute */}
-      <figure>
+      <figure className="py-12">
         <ImageDisplay
           img="https://source.unsplash.com/9VzoRKfBsMM/800x600/"
           images={images}
@@ -36,7 +36,7 @@ export default function Development({}: Props) {
           text={text}
         />
       </figure>
-      <div className="sm:flex sm:justify-center">
+      <div className="sm:flex sm:justify-center py-8">
         {/* Use link element for NextButton and add aria-label */}
         <NextButton link="/" text="Go to Home" aria-label="Go to Home" />
       </div>
