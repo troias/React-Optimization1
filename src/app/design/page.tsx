@@ -16,39 +16,51 @@ export default function Design({}: Props) {
       </h1>
 
       {/* Wireframing stage */}
-      <MobileDropDown
-        name="Wireframing stage"
-        description={development_story[1]?.wireframe?.description || ""}
-        externalURL={development_story[1].externalURL}
-      />
+      <div className="pb-8 sm:hidden">
+        <MobileDropDown
+          name="Wireframing stage "
+          description={development_story[1]?.wireframe?.description || ""}
+          externalURL={development_story[1].externalURL}
+        />
+      </div>
 
       {/* Dual image display */}
+
       <DualImageDisplay
         img="/wireframe.png"
         orientation="left"
         text={development_story[1]?.wireframe?.text || ""}
+        title={development_story[1]?.wireframe?.title || ""}
       />
 
       {/* Building Design System */}
-      <MobileDropDown
-        name="Building Design System"
-        description={development_story[1]?.designSystem?.description || ""}
-      />
+      <div className="pb-8 sm:hidden">
+        <MobileDropDown
+          name="Building Design System"
+          description={development_story[1]?.designSystem?.description || ""}
+        />
+      </div>
+
       <DualImageDisplay
         img={"/design-system.png"}
         orientation="right"
         text={development_story[1]?.designSystem?.text || ""}
+        title={development_story[1]?.designSystem?.title || ""}
       />
 
       {/* Building pages */}
-      <MobileDropDown
-        name={development_story[1]?.buildingPages?.name || ""}
-        description={development_story[1]?.buildingPages?.description || ""}
-      />
+      <div className="pb-8 sm:hidden">
+        <MobileDropDown
+          name={development_story[1]?.buildingPages?.name || ""}
+          description={development_story[1]?.buildingPages?.description || ""}
+        />
+      </div>
+
       <DualImageDisplay
         img={"/pages.png"}
         orientation="left"
         text={development_story[1]?.buildingPages?.text || ""}
+        title={development_story[1]?.buildingPages?.title || ""}
       />
 
       {/* Next button */}

@@ -34,14 +34,14 @@ export const MobileDropDown = (props: Props) => {
     <>
       {/* Header section of dropdown */}
       <div
-        className="flex justify-between items-center w-full px-4 py-6 border rounded-md border-gray-400/40 cursor-pointer hover:bg-slate-100/70 drop-shadow-lg"
+        className="flex justify-between items-center w-full px-4 py-3 border rounded-md border-gray-400/40 cursor-pointer relative z-10 "
         onClick={clickHandler}
         // Add accessibility attribute to indicate this is a button
         role="button"
         // Add accessibility attribute to indicate that the button can be toggled
         aria-pressed={isOpen}
       >
-        <h3 className="text-lg font-medium text-gray-900 lg:pl-4">
+        <h3 className="text-basefont-medium text-gray-900 lg:pl-4">
           {props.name}
         </h3>
         <div className="lg:pr-4">
@@ -51,24 +51,25 @@ export const MobileDropDown = (props: Props) => {
             onClick={clickHandler}
           />
         </div>
+        <span className="absolute top-0 left-0 w-full h-full border-2 border-transparent rounded-md hover:border-indigo-600/50  z-0"></span>
       </div>
 
       {/* Content section of dropdown */}
       {isOpen && (
-        <div className="p-4 py-10 border-botton">
-          <p className="sm:text-lg mg:text:lg text-gray-600">
+        <div className="p-4 py-10 border-botton  border-b-2 border-gray-200">
+          <p className="text-base leading-7 text-gray-700 lg:max-w-lg border-b-2 border-gray-200">
             {descriptionArray || description}
           </p>
           {externalURL && (
-            <h4 className="text-lg text-bold text-gray-800 py-2">
-              {externalURL.text}{" "}
+            <h4 className="text-lg text-bold text-gray-800 py-6">
+              {externalURL.text[0].toUpperCase() + externalURL.text.slice(1)}
             </h4>
           )}
 
           {externalURL && (
             <a
               href={externalURL.url}
-              className="text-sm text-gray-500 underline hover:opacity-75 hover:scale-105 hover:border-gray-200"
+              className="text-base leading-7 text-gray-700 lg:max-w-lg underline hover:opacity-75 hover:scale-105 hover:border-gray-200  "
             >
               {externalURL.url}
             </a>

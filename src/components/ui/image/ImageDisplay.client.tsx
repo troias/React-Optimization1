@@ -13,6 +13,7 @@ type Props = {
     text: string;
   }[];
   text?: string;
+  title?: string;
   externalUrl?: string;
   alt?: string;
 };
@@ -22,6 +23,7 @@ export default function ImageDisplay({
   orientation,
   images,
   text,
+  title,
 }: Props) {
   const [isMobile] = useMediaQuery("(max-width: 640px)");
   const [isIpad] = useMediaQuery("(max-width: 1030px)");
@@ -38,7 +40,7 @@ export default function ImageDisplay({
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 gap md:gap-10">
       {isMobile && (
-        <div className="col-span-1  aspect-auto">
+        <div className="col-span-1 aspect-auto">
           <Image
             src={img || "/wireframe.png"}
             alt="Picture of the author"
@@ -46,7 +48,12 @@ export default function ImageDisplay({
             height={600}
           />
           <div className="py-8 ">
-            <p className=" text-base font-bold  flex justify-center items-center px-4 text-gray-600 hover:text-lg ">
+            <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl pb-4 ">
+              <p className="text-lg font-semibold leading-7 text-indigo-600">
+                {title}
+              </p>
+            </h1>
+            <p className=" text-base leading-7 text-gray-700 lg:max-w-lg ">
               {text}
             </p>
           </div>
@@ -62,8 +69,13 @@ export default function ImageDisplay({
               height={500}
             />
           </div>
-          <div className="py-8   ">
-            <p className="text-base font-bold  flex justify-center items-center px-4 text-gray-600">
+          <div className="py-8">
+            <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl pb-4 ">
+              <p className="text-lg font-semibold leading-7 text-indigo-600">
+                {title}
+              </p>
+            </h1>
+            <p className="text-base leading-7 text-gray-700 lg:max-w-lg">
               {text}
             </p>
           </div>

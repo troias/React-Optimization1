@@ -20,12 +20,12 @@ export const development_story = [
       },
       {
         title: "Jest",
-        imageUrl: "https://source.unsplash.com/9VzoRKfBsMM/800x600/",
+        imageUrl: "https://source.unsplash.com/0QWUm-wYXGA/800x600/",
         text: "NextJS ",
       },
       {
         title: "Github",
-        imageUrl: "https://source.unsplash.com/9VzoRKfBsMM/800x600/",
+        imageUrl: "https://source.unsplash.com/0QWUm-wYXGA/800x600/",
         text: "NextJS ",
       },
     ],
@@ -41,24 +41,27 @@ export const development_story = [
       url: "https://www.figma.com/file/8sIkGSz8H6H4wGam12ednp/project-2?node-id=26%3A826&t=7x5tlnhD6nliaQSH-1",
     },
     wireframe: {
+      title: "Wireframing",
       description:
         "Wireframing is critical in web development as it helps establish the website's structure and layout before any coding. It enables easy modifications and adjustments, serves as a communication tool, saves time and resources, and reduces the need for rework",
       imageUrl: "https://source.unsplash.com/4UGmm3WRUoQ/800x600/",
-      text: " Looking to bring your web design ideas to life? Start with wireframing! Creating a wireframe allows you to map out the structure of your site, plan its functionality, and identify potential user experience issues before you start designing. It's the first step to building a successful website. Let this picture inspire you to start wireframing your next project! ",
+      text: "I used wireframes to establish the structure and layout of my website before any coding. This enabled me to easily modify and adjust the design as needed, and served as a communication tool to share my ideas with my team. Wireframing also saved time and resources by reducing the need for rework, and allowed me to focus on the most important aspects of the website's design.",
     },
     designSystem: {
+      title: "Design System",
       description:
         "The purpose of building a design system in Figma for a web app is to establish a consistent and cohesive visual language for the app's interface. A design system is a collection of reusable design elements, such as components, styles, and guidelines, that can be easily accessed and used across the app's interface. By creating and maintaining a design system in Figma, teams can work more efficiently, reduce design inconsistencies, and improve the overall user experience. Some benefits of building a design system in Figma for a web app include: Consistency: A design system ensures that all elements of the app's interface are visually consistent and aligned with the brand's guidelines. Efficiency: A design system enables designers and developers to work more efficiently by providing a centralized resource for all design assets and guidelines.Scalability: A design system can be easily scaled as the app evolves and new features are added. Collaboration: A design system promotes collaboration between designers, developers, and stakeholders by providing a shared understanding of the app's visual language. Accessibility: A design system can incorporate accessibility guidelines to ensure that the app is usable by everyone, including people with disabilities. Overall, building a design system in Figma is a valuable investment in the development of a web app, as it enables teams to create a more consistent, efficient, and user-friendly product.",
       name: "Design System",
       imageUrl: "https://source.unsplash.com/9VzoRKfBsMM/800x600/",
-      text: "Design systems are the backbone of successful design. By establishing a cohesive set of guidelines and principles for your brand's visual identity, you can create consistency across all touchpoints, from your website to your marketing materials. A well-crafted design system can streamline your design process, increase efficiency, and ensure a polished, professional look and feel for your brand. Let this picture inspire you to develop a design system that will elevate your brand to the next level!",
+      text: "In addition to using Figma for wireframing, I also leveraged Tailwind CSS as a design system to create a cohesive visual language for the web app's interface. By utilizing Tailwind CSS, I was able to quickly and easily develop reusable components that were consistent across the entire website. This allowed me to save time and effort by not having to recreate the same elements over and over again. Additionally, because Tailwind CSS is highly customizable, I was able to tweak and adjust the styles to perfectly fit the needs of the project. ",
     },
     buildingPages: {
+      title: "Building Pages",
       description:
         "After building wireframes, design systems, and components, it's important to move on to designing pages on Figma. This step allows you to bring all of your previous work together into a cohesive visual representation of your digital product. Designing pages on Figma allows you to see how your components and design system work together in the context of a real page. This can help you identify any inconsistencies or issues with your design system, and make any necessary adjustments before you start coding. Additionally, designing pages on Figma allows you to create responsive designs that work well on a variety of screen sizes and devices. This is increasingly important in today's mobile-first world, where users may access websites and apps on a range of different devices. Another benefit of designing pages on Figma is that it allows you to create interactive prototypes that can be used to test and validate your designs. This can help you identify usability issues and make improvements before you start coding, ultimately saving time and resources. Finally, designing pages on Figma allows you to collaborate with others in real-time, whether you're working on a team or with a client. This can help ensure that everyone is on the same page and working towards the same goals. In summary, designing pages on Figma is an important step in the design process that allows you to bring all of your previous work together into a cohesive visual representation of your digital product. It allows you to test and validate your designs, create responsive designs, and collaborate with others, ultimately leading to better user experiences and more successful digital products.",
       name: "Building Pages",
       imageUrl: "https://source.unsplash.com/QwAL909kTiY/800x600/",
-      text: "Building pages for your website can be a daunting task, but with the right approach, it can be a rewarding one. Each page presents an opportunity to communicate your brand's message, showcase your products or services, and engage your audience. By focusing on user experience, functionality, and aesthetics, you can create pages that not only look great but also serve a purpose. Let this picture inspire you to start building pages that captivate your audience and drive results for your business.",
+      text: "On Figma I built pages using the design system and components I created in the previous step. This allowed me to see how my components and design system worked together in the context of a real page. This helped me identify any inconsistencies or issues with my design system, and make any necessary adjustments before I started coding. Additionally, designing pages on Figma allowed me to create responsive designs that worked well on a variety of screen sizes and devices. This was increasingly important in today's mobile-first world, where users may access websites and apps on a range of different devices. Another benefit of designing pages on Figma was that it allowed me to create interactive prototypes that could be used to test and validate my designs. ",
     },
   },
   {

@@ -9,11 +9,18 @@ type Props = {
   orientation: string;
   img: string;
   text: string;
+  title: string;
 };
 
-export default function DualImageDisplay({ orientation, img, text }: Props) {
+export default function DualImageDisplay({
+  orientation,
+  img,
+  text,
+  title,
+}: Props) {
   const [isMobile] = useMediaQuery("(max-width: 640px)");
 
+  console.log("title", title);
   return (
     <div className="py-12">
       {isMobile ? (
@@ -26,7 +33,12 @@ export default function DualImageDisplay({ orientation, img, text }: Props) {
           />
         </div>
       ) : (
-        <AlternatingImgTxt oriantation={orientation} img={img} text={text} />
+        <AlternatingImgTxt
+          oriantation={orientation}
+          img={img}
+          text={text}
+          title={title}
+        />
       )}
     </div>
   );
