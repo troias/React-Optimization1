@@ -28,7 +28,7 @@ export default function TextDisplay() {
                   }}
                 />
               </div>
-              {/* <figure className="relative isolate">
+              <figure className="relative isolate">
                 <svg
                   viewBox="0 0 162 128"
                   fill="none"
@@ -55,7 +55,7 @@ export default function TextDisplay() {
                   </strong>{" "}
                   CEO at Designli
                 </figcaption>
-              </figure> */}
+              </figure>
             </div>
           </div>
           <div>
