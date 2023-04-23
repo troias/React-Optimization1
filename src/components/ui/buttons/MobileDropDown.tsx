@@ -51,7 +51,13 @@ export const MobileDropDown = (props: Props) => {
             onClick={clickHandler}
           />
         </div>
-        <span className="absolute top-0 left-0 w-full h-full border-2 border-transparent rounded-md hover:border-indigo-600/50  z-0"></span>
+        {isOpen && (
+          <span
+            className={
+              "absolute top-0 left-0 w-full h-full border-2 border-transparent rounded-md hover:border-indigo-600/50  z-0"
+            }
+          ></span>
+        )}
       </div>
 
       {/* Content section of dropdown */}
