@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { development_story } from "@/lib/info";
-import { SiApachesolr } from "react-icons/si";
 
 export default function TextDisplay() {
   const { title, name, description, externalURL } = development_story[0];
@@ -43,7 +42,6 @@ export default function TextDisplay() {
                   <use href="#0ef284b8-28c2-426e-9442-8655d393522e" x={86} />
                 </svg>
 
-                <SiApachesolr className="w-6 h-6" />
                 <blockquote className="mt-6 text-xl font-semibold leading-8 text-white">
                   <p>
                     Ideation is key to web development success. It sparks
