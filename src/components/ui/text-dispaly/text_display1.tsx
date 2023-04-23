@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { type } from "os";
 
 const data = {
   title: "Title",
@@ -14,7 +15,12 @@ const data = {
     "No server? No problem. With Vercel and GitHub, developers can quickly and easily deploy web applications without the hassle of managing servers. This powerful combination allows developers to focus on writing code and creating features, while Vercel takes care of the deployment and scaling. With Vercels automatic scaling and instant deployment, developers can be confident that their web application is always available and performing at its best. It is the perfect solution for modern web development, where agility and speed are essential to success.",
 };
 
-export default function TextDisplay({ title, description }) {
+type Props = {
+  title?: string;
+  description?: string;
+};
+
+export default function TextDisplay({ title, description }: Props) {
   return (
     <div className="relative isolate overflow-hidden bg-white py-24 sm:py-32">
       <div
