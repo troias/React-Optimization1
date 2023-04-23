@@ -2,10 +2,14 @@ import Image from "next/image";
 
 const data = {
   title: "Title",
+  name: "Troy Flavell",
+  twitterHander: "@TroyFlavell on Twitter",
+  title1: "Deploy faster",
   description1:
     "Development with TypeScript and NextJs is like having a superpower in your toolkit. It empowers developers to write more robust, scalable, and maintainable code, while also enabling them to build high-performance web applications with ease.",
   description2:
     "Developing with Figma, TypeScript, and Next.js is like having a turbocharger for your development process. With Figma, designers and developers can collaborate seamlessly to quickly iterate on the design and user experience. TypeScript adds an extra layer of type safety to your code, allowing for faster and more confident refactoring. And with NextJs, developers can build fast, scalable, and SEO-friendly web applications with ease. Together, these tools create a powerful combination that helps developers build high-quality web applications faster than ever before.",
+  title3: "No server? No problem.",
   description3:
     "No server? No problem. With Vercel and GitHub, developers can quickly and easily deploy web applications without the hassle of managing servers. This powerful combination allows developers to focus on writing code and creating features, while Vercel takes care of the deployment and scaling. With Vercel's automatic scaling and instant deployment, developers can be confident that their web application is always available and performing at its best. It's the perfect solution for modern web development, where agility and speed are essential to success.",
 };
@@ -28,7 +32,7 @@ export default function TextDisplay({ title, description }) {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <p className="text-lg font-semibold leading-8 tracking-tight text-indigo-600">
-            Deploy faster
+            {data.title1}
           </p>
           <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             {title}
@@ -71,10 +75,8 @@ export default function TextDisplay({ title, description }) {
                   height={40}
                 />
                 <div className="text-sm leading-6">
-                  <div className="font-semibold text-gray-900">
-                    Troy Flavell
-                  </div>
-                  <div className="text-gray-600">@TroyFlavell on Twitter</div>
+                  <div className="font-semibold text-gray-900">{data.name}</div>
+                  <div className="text-gray-600">{data.twitterHander}</div>
                 </div>
               </figcaption>
             </figure>
@@ -83,7 +85,7 @@ export default function TextDisplay({ title, description }) {
             <p>{data.description2}</p>
 
             <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">
-              No server? No problem.
+              {data.title3}
             </h2>
             <p className="mt-6">{data.description3}</p>
           </div>
