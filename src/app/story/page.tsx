@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { steps } from "../../lib/info";
 
 const pageInfo = [
@@ -39,10 +40,12 @@ export default function Story() {
             >
               <Link href={post.href}>
                 <div className="relative w-full filter grayscale hover:grayscale-0">
-                  <img
+                  <Image
                     src={post.imageUrl}
                     alt=""
                     className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
+                    width={500}
+                    height={500}
                   />
                   <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
                 </div>
