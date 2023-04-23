@@ -1,6 +1,14 @@
 import Image from "next/image";
 import { development_story } from "@/lib/info";
 
+const data = {
+  title: "Development Story",
+  name: "Troy Flavell",
+  position: " CEO at Designli",
+  description:
+    " Ideation is key to web development success. It sparks innovation, helps solve problems, and creates unique user experiences. Don't skip it!",
+};
+
 export default function TextDisplay() {
   const { title, name, description, externalURL } = development_story[0];
   return (
@@ -43,17 +51,13 @@ export default function TextDisplay() {
                 </svg>
 
                 <blockquote className="mt-6 text-xl font-semibold leading-8 text-white">
-                  <p>
-                    Ideation is key to web development success. It sparks
-                    innovation, helps solve problems, and creates unique user
-                    experiences. Don't skip it!
-                  </p>
+                  <p>{data.description.replace(/'/g, "'")}</p>
                 </blockquote>
                 <figcaption className="mt-6 text-sm leading-6 text-gray-300">
                   <strong className="font-semibold text-white">
-                    Troy Flavell,
+                    {data.name},
                   </strong>{" "}
-                  CEO at Designli
+                  {data.position}
                 </figcaption>
               </figure>
             </div>

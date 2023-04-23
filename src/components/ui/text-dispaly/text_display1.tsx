@@ -64,7 +64,7 @@ export default function TextDisplay({ title, description }) {
             </svg>
             <figure className="border-l border-indigo-600 pl-8">
               <blockquote className="text-xl font-semibold leading-8 tracking-tight text-gray-900">
-                <p>"{data.description1}"</p>
+                <p>{'"' + data.description1.replace(/"/g, "'") + '"'}</p>
               </blockquote>
               <figcaption className="mt-8 flex gap-x-4">
                 <Image
