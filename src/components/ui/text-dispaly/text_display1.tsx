@@ -51,7 +51,7 @@ export default function TextDisplay({ title, description }) {
             <figure className="border-l border-indigo-600 pl-8">
               <blockquote className="text-xl font-semibold leading-8 tracking-tight text-gray-900">
                 <p>
-                  "Development with TypeScript and Next.js is like having a
+                  "Development with TypeScript and NextJs is like having a
                   superpower in your toolkit. It empowers developers to write
                   more robust, scalable, and maintainable code, while also
                   enabling them to build high-performance web applications with
@@ -82,10 +82,10 @@ export default function TextDisplay({ title, description }) {
               and developers can collaborate seamlessly to quickly iterate on
               the design and user experience. TypeScript adds an extra layer of
               type safety to your code, allowing for faster and more confident
-              refactoring. And with Next.js, developers can build fast,
-              scalable, and SEO-friendly web applications with ease. Together,
-              these tools create a powerful combination that helps developers
-              build high-quality web applications faster than ever before.
+              refactoring. And with NextJs, developers can build fast, scalable,
+              and SEO-friendly web applications with ease. Together, these tools
+              create a powerful combination that helps developers build
+              high-quality web applications faster than ever before.
             </p>
 
             <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">
