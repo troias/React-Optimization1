@@ -38,7 +38,7 @@ export default function ImageDisplay({
   //display 2 images wtih 1 text box in 3 col grid on desktop and chose orientation based on props
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 gap md:gap-10">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 gap md:gap-10 lg:px-8">
       {isMobile && (
         <div className="col-span-1 aspect-auto">
           <Image

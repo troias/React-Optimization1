@@ -4,7 +4,9 @@ import {
   ServerIcon,
 } from "@heroicons/react/20/solid";
 
-export default function TextDisplay() {
+import Image from "next/image";
+
+export default function TextDisplay({ title, description }) {
   return (
     <div className="relative isolate overflow-hidden bg-white py-24 sm:py-32">
       <div
@@ -25,14 +27,9 @@ export default function TextDisplay() {
             Deploy faster
           </p>
           <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            A better workflow
+            {title}
           </h1>
-          <p className="mt-6 text-xl leading-8 text-gray-700">
-            Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At
-            arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae
-            feugiat egestas ac. Diam nulla orci at in viverra scelerisque eget.
-            Eleifend egestas fringilla sapien.
-          </p>
+          <p className="mt-6 text-xl leading-8 text-gray-700">{description}</p>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:mt-10 lg:max-w-none lg:grid-cols-12">
           <div className="relative lg:order-last lg:col-span-5">
@@ -60,95 +57,56 @@ export default function TextDisplay() {
             <figure className="border-l border-indigo-600 pl-8">
               <blockquote className="text-xl font-semibold leading-8 tracking-tight text-gray-900">
                 <p>
-                  “Vel ultricies morbi odio facilisi ultrices accumsan donec
-                  lacus purus. Lectus nibh ullamcorper ac dictum justo in
-                  euismod. Risus aenean ut elit massa. In amet aliquet eget
-                  cras. Sem volutpat enim tristique.”
+                  "Development with TypeScript and Next.js is like having a
+                  superpower in your toolkit. It empowers developers to write
+                  more robust, scalable, and maintainable code, while also
+                  enabling them to build high-performance web applications with
+                  ease."
                 </p>
               </blockquote>
               <figcaption className="mt-8 flex gap-x-4">
-                <img
-                  src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                <Image
+                  src="/troyflavell.jpg"
                   alt=""
-                  className="mt-1 h-10 w-10 flex-none rounded-full bg-gray-50"
+                  className="mt-1 h-10 w-10 flex-none rounded-full bg-gray-50 grayscale hover:grayscale-0 transition ease-in-out duration-150"
+                  width={40}
+                  height={40}
                 />
                 <div className="text-sm leading-6">
                   <div className="font-semibold text-gray-900">
-                    Brenna Goyette
+                    Troy Flavell
                   </div>
-                  <div className="text-gray-600">@brenna</div>
+                  <div className="text-gray-600">@TroyFlavell on Twitter</div>
                 </div>
               </figcaption>
             </figure>
           </div>
           <div className="max-w-xl text-base leading-7 text-gray-700 lg:col-span-7">
             <p>
-              Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus
-              enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor
-              praesent donec est. Odio penatibus risus viverra tellus varius sit
-              neque erat velit. Faucibus commodo massa rhoncus, volutpat.
-              Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae
-              sed turpis id.
+              Developing with Figma, TypeScript, and Next.js is like having a
+              turbocharger for your development process. With Figma, designers
+              and developers can collaborate seamlessly to quickly iterate on
+              the design and user experience. TypeScript adds an extra layer of
+              type safety to your code, allowing for faster and more confident
+              refactoring. And with Next.js, developers can build fast,
+              scalable, and SEO-friendly web applications with ease. Together,
+              these tools create a powerful combination that helps developers
+              build high-quality web applications faster than ever before.
             </p>
-            <ul role="list" className="mt-8 max-w-xl space-y-8 text-gray-600">
-              <li className="flex gap-x-3">
-                <CloudArrowUpIcon
-                  className="mt-1 h-5 w-5 flex-none text-indigo-600"
-                  aria-hidden="true"
-                />
-                <span>
-                  <strong className="font-semibold text-gray-900">
-                    Push to deploy.
-                  </strong>{" "}
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Maiores impedit perferendis suscipit eaque, iste dolor
-                  cupiditate blanditiis ratione.
-                </span>
-              </li>
-              <li className="flex gap-x-3">
-                <LockClosedIcon
-                  className="mt-1 h-5 w-5 flex-none text-indigo-600"
-                  aria-hidden="true"
-                />
-                <span>
-                  <strong className="font-semibold text-gray-900">
-                    SSL certificates.
-                  </strong>{" "}
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                  qui lorem cupidatat commodo.
-                </span>
-              </li>
-              <li className="flex gap-x-3">
-                <ServerIcon
-                  className="mt-1 h-5 w-5 flex-none text-indigo-600"
-                  aria-hidden="true"
-                />
-                <span>
-                  <strong className="font-semibold text-gray-900">
-                    Database backups.
-                  </strong>{" "}
-                  Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus.
-                  Et magna sit morbi lobortis.
-                </span>
-              </li>
-            </ul>
-            <p className="mt-8">
-              Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis
-              odio id et. Id blandit molestie auctor fermentum dignissim. Lacus
-              diam tincidunt ac cursus in vel. Mauris varius vulputate et
-              ultrices hac adipiscing egestas. Iaculis convallis ac tempor et
-              ut. Ac lorem vel integer orci.
-            </p>
+
             <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">
               No server? No problem.
             </h2>
             <p className="mt-6">
-              Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam
-              consequat in. Convallis arcu ipsum urna nibh. Pharetra, euismod
-              vitae interdum mauris enim, consequat vulputate nibh. Maecenas
-              pellentesque id sed tellus mauris, ultrices mauris. Tincidunt enim
-              cursus ridiculus mi. Pellentesque nam sed nullam sed diam turpis
-              ipsum eu a sed convallis diam.
+              No server? No problem. With Vercel and GitHub, developers can
+              quickly and easily deploy web applications without the hassle of
+              managing servers. This powerful combination allows developers to
+              focus on writing code and creating features, while Vercel takes
+              care of the deployment and scaling. With Vercel's automatic
+              scaling and instant deployment, developers can be confident that
+              their web application is always available and performing at its
+              best. It's the perfect solution for modern web development, where
+              agility and speed are essential to success.
             </p>
           </div>
         </div>

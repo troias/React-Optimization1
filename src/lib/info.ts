@@ -68,7 +68,7 @@ export const development_story = [
     name: "step 3",
     title: "Development",
     description:
-      "To build this application I chose to use nextJS. I'm using the new appDir feature to structure the pages, and I'm using Jest to take advantage of test driven development. Checkout the github repo to see how I coded the application",
+      "To build this application, I leveraged the power of TypeScript, Figma, and Next.js. TypeScript provided typechecking and added an extra layer of safety to the codebase, while Figma was used for prototyping the user interface. Next.js allowed for seamless server-side rendering and speedy development, thanks to its intuitive appDir feature. Additionally, I employed Jest to take advantage of test-driven development and ensure high-quality code. You can check out the GitHub repository to dive deeper into the codebase and see how I implemented these technologies",
     images: [
       {
         title: "NextJS",

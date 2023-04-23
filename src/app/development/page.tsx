@@ -3,6 +3,7 @@ import { MobileDropDown } from "@/components/ui/buttons/MobileDropDown";
 import NextButton from "@/components/ui/buttons/NextButton.client";
 import { development_story } from "@/lib/info";
 import ImageDisplay from "@/components/ui/image/ImageDisplay.client";
+import TextDisplay from "@/components/ui/text-dispaly/text_display1";
 
 type Props = {};
 
@@ -16,8 +17,13 @@ export default function Development({}: Props) {
       <h1 className="text-lg md:text-2xl font-bold text-center py-8">
         Development
       </h1>
+
+      <div className="pb-8 hidden sm:flex">
+        <TextDisplay />
+      </div>
+
       {/* Wrap MobileDropDown component with a section element and add aria-label */}
-      <section aria-label={title}>
+      <section aria-label={title} className="pb-8 sm:hidden">
         <MobileDropDown
           name={title}
           description={description}
