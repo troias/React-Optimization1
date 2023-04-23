@@ -28,7 +28,7 @@ export default function TextDisplay() {
                   }}
                 />
               </div>
-              <figure className="relative isolate">
+              {/* <figure className="relative isolate">
                 <svg
                   viewBox="0 0 162 128"
                   fill="none"
@@ -46,7 +46,7 @@ export default function TextDisplay() {
                   <p>
                     Ideation is key to web development success. It sparks
                     innovation, helps solve problems, and creates unique user
-                    experiences. Don't skip it!
+                    experiences. Don/t skip it!
                   </p>
                 </blockquote>
                 <figcaption className="mt-6 text-sm leading-6 text-gray-300">
@@ -55,7 +55,7 @@ export default function TextDisplay() {
                   </strong>{" "}
                   CEO at Designli
                 </figcaption>
-              </figure>
+              </figure> */}
             </div>
           </div>
           <div>
